@@ -150,3 +150,18 @@ document.querySelector(".six-popup-close").addEventListener('click' , function()
 // =========================================
 //     My services popup section  end
 // =========================================
+
+
+// =========================================
+//     Navbar icon
+// =========================================
+
+const moblieNav = document.querySelector(".click-button");
+const navHeader = document.querySelector(".navbar-container");
+
+const toggleNavbar = () => {
+    // alert("hello");
+    navHeader.classList.toggle("active");
+};
+
+moblieNav.addEventListener("click" , () => toggleNavbar());
