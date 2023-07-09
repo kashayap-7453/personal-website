@@ -1183,15 +1183,10 @@ p{
 Project happy client section
 -------------------------------------*/
 @media(max-width:1600px){
-
-
-    
-
 .project-happy-clients-parent-container
 .project-happy-clients-child-container{
     width:100%;
     height: 750px;
-    border:2px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1202,7 +1197,6 @@ Project happy client section
 .project-happy-clients{
     width:960px;
     height: 600px;
-    border:2px solid blue;
 }
 
 .project-happy-clients 
@@ -1216,14 +1210,12 @@ Project happy client section
 .project-happy-clients-small-paragraph{
     width: 40%;
     height: 300px;
-    border:2px solid blue;
 }
 
 .project-happy-clients .project-happy-clients-two-paragraph
 .project-happy-clients-big-paragraph{
     width: 60%;
     height: 300px;
-    border:2px solid blue;
 }
 
 .project-happy-clients-big-paragraph
@@ -1280,7 +1272,6 @@ Project happy client section
     align-items: center;
     width: 100%;
     height:275px;
-    border:2px solid red;
 }
 
 .three-boxes-experince-project
@@ -1306,7 +1297,6 @@ Project happy client section
 .three-boxes-experince-project{
     width: 100%;
     height:210px;
-    /* border:2px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1367,7 +1357,6 @@ Project happy client section
     .project-happy-clients-child-container{
         width:100%;
         height: 850px;
-        border:2px solid blue;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1378,7 +1367,6 @@ Project happy client section
     .project-happy-clients{
         width:770px;
         height: 680px;
-        border:2px solid yellow;
     }
     
     .project-happy-clients 
@@ -1392,7 +1380,6 @@ Project happy client section
     .project-happy-clients-small-paragraph{
         width: 40%;
         height: 404px;
-        border:2px solid blue;
     }
     
     .project-happy-clients .project-happy-clients-two-paragraph
@@ -1455,7 +1442,6 @@ Project happy client section
         align-items: center;
         width: 100%;
         height:275px;
-        border:2px solid red;
     }
     
     .three-boxes-experince-project
@@ -1481,7 +1467,6 @@ Project happy client section
     .three-boxes-experince-project{
         width: 100%;
         height:210px;
-        /* border:2px solid black; */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1537,7 +1522,6 @@ Project happy client section
     .project-happy-clients-child-container{
         width:100%;
         height: 1090px;
-        /* border:2px solid blue; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1563,7 +1547,6 @@ Project happy client section
     .project-happy-clients-small-paragraph{
         width: 100%;
         height: auto;
-        border:2px solid blue;
         padding-bottom: 50px;
     }
     
@@ -1572,7 +1555,6 @@ Project happy client section
         width: 100%;
         height: auto;
         padding-bottom: 40px;
-        border:2px solid blue;
     }
     
     .project-happy-clients-big-paragraph
@@ -1625,18 +1607,16 @@ Project happy client section
     
     .three-boxes-experince-project-container{
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
         height:450px;
-        border:2px solid gray;
     }
 
     .three-boxes-experince-project-container
     .three-boxes-experince-project{
         width: 100%;
         height:400px;
-        border:2px solid yellow;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -1706,26 +1686,21 @@ Project happy client section
 Project happy client section
 ----------------------------------*/
     @media(max-width:980px){
-        .three-boxes-experince-project
+    .three-boxes-experince-project
     .three-boxes-experince-project-boxes-a{
-        /* width: 416px;
-        height: 168px;; */
         width: 48%;
         height: 168px;
-        margin-right: 5px;
     }
     
     .three-boxes-experince-project
     .three-boxes-experince-project-boxes-b{
         width: 48%;
         height: 168px;
-        /* margin: 5px; */
     }
     .three-boxes-experince-project
     .three-boxes-experince-project-boxes-c{
         width:48%;
         height: 168px;
-        margin: 5px;
     }
     }
 
@@ -1750,7 +1725,6 @@ Project happy client section
     .project-happy-clients{
         width: 95% ;
         height: 1300px;
-        border: 2px solid pink;
     }
     
     .project-happy-clients 
@@ -1821,11 +1795,10 @@ Project happy client section
     
     .three-boxes-experince-project-container{
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
         height:650px;
-        border:2px solid gray;
     }
 
     .three-boxes-experince-project-container
@@ -1890,6 +1863,102 @@ Project happy client section
         font-weight: 500;
         color:#55527C;
         text-transform: uppercase;
+    }
+    
+    }
+
+    /* Media query 560px
+-------------------------------
+Project happy client section
+-------------------------------------*/
+@media(max-width:560px){
+    .project-happy-clients-parent-container
+    .project-happy-clients-child-container{
+        width:100%;
+        height: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-happy-clients-parent-container
+    .project-happy-clients-child-container
+    .project-happy-clients{
+        width: 95% ;
+        height: 1400px;
+    }
+    
+
+    .three-boxes-experince-project-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:700px;
+    }
+
+    .three-boxes-experince-project-container
+    .three-boxes-experince-project{
+        width: 100%;
+        height:650px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Karla', sans-serif;
+    }
+    
+    }
+
+
+
+    /* Media query 470px
+-------------------------------
+Project happy client section
+-------------------------------------*/
+@media(max-width:380px){
+    .project-happy-clients-parent-container
+    .project-happy-clients-child-container{
+        width:100%;
+        height: 1650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-happy-clients-parent-container
+    .project-happy-clients-child-container
+    .project-happy-clients{
+        width: 95% ;
+        height: 1500px;
+    }
+    
+
+    .three-boxes-experince-project-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:700px;
+    }
+
+    .three-boxes-experince-project-container
+    .three-boxes-experince-project{
+        width: 100%;
+        height:650px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Karla', sans-serif;
+        margin-right: 5px;
+    }
+
+    .project-happy-clients .project-happy-clients-two-paragraph
+    .project-happy-clients-small-paragraph{
+        width: 100%;
+        height: auto;
+        padding-bottom:50px;
     }
     
     }
@@ -2521,7 +2590,6 @@ p{
         justify-content: space-between;
         align-items: center;
         flex-direction:column;
-        /* border: 1px solid rebeccapurple; */
     }
     
     .everthing-about-me-child-conatiner
@@ -2609,6 +2677,55 @@ p{
         color: #55527C;
     }
     
+    }
+
+    @media(max-width:380px){
+
+        .everthing-about-me-conatiner
+        .everthing-about-me-child-conatiner{
+            width:100%;
+            height: 1450px;    
+        }
+
+        .everthing-about-me-child-conatiner
+        .everthing-about-me-child-conatiner-four-boxes{
+            width:95%;
+            height: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction:column;
+        }
+        
+
+        .everthing-about-me-child-conatiner
+        .everthing-about-me-heading{
+            width:95%;
+            height: 120px;
+            margin-bottom: 20px;   
+        }
+
+        .everthing-about-me-child-conatiner
+        .everthing-about-me-child-conatiner-four-boxes
+        .everthing-about-me-boxes{
+            width: 100%;
+            height: 263px;    
+        }
+        
+        
+        .everthing-about-me-boxes a{
+            width: 90%;
+            height: 263px;
+            position: absolute;
+            
+        }
+    
+        
+        .everthing-about-me-boxes
+        .everthing-about-me-box-list{
+            width: 90%;
+            height: 186px;
+        }
     }
 
 /* ======================================
@@ -4502,7 +4619,6 @@ a span{
         margin-bottom:12px;
         text-transform: uppercase;
         color: #55527C;
-        /* display: block; */
     }
     
     .my-services-heading 
@@ -4982,7 +5098,6 @@ a span{
         padding-bottom:12px;
         text-transform: uppercase;
         color: #55527C;
-        /* display: block; */
     }
     
     .my-services-heading 
@@ -5022,7 +5137,6 @@ a span{
     .my-services-six-boxes
     .box-my-services-parent{
         width: 100%;
-        /* border: 2px solid blue; */
         height: 234.69px;
     }
     
@@ -5031,7 +5145,6 @@ a span{
     .my-services-six-boxes .box-my-services-parent
     .box-my-services{
          width: 85%;
-        /* border: 2px solid blue; */
         height: 187.69px;
     }
     
@@ -5409,7 +5522,7 @@ a span{
 @media(max-width:550px){
     .my-services-container{
         width: 100%;
-        height: 2500px;
+        height: 2425px;
         font-family: 'Karla', sans-serif;
         background-color: #fff;
     }
@@ -5434,7 +5547,6 @@ a span{
         align-items: center;
         margin-top:100px;
         margin-bottom: 60px;
-        /* border: 2px solid blue; */
 
     }
     
@@ -5453,7 +5565,6 @@ a span{
         font-weight: 500;
         word-wrap: break-word;
         line-height: 30px;
-        /* margin-bottom:12px; */
         text-transform: uppercase;
         color: #55527C;
     }
@@ -5487,7 +5598,6 @@ a span{
         align-items: center;
         flex-direction: column;
         margin-bottom: 57px;
-        border: 1px solid red;
     }
     
     
@@ -5884,7 +5994,14 @@ a span{
    
 }
 
-
+@media(max-width:380px){
+    .my-services-container{
+        width: 100%;
+        height: 2265px;
+        font-family: 'Karla', sans-serif;
+        background-color: #fff;
+    }
+}
 
 /* ==========================================
         my service six boxes section end 
@@ -6991,7 +7108,63 @@ a span{
 
 
 }
+/* Video content 380px
+------------------------------ */
 
+@media(max-width:380px){
+    .my-services-child-container
+    .my-services-video-content {
+        width: 95%;
+        height: 165px;
+        position:relative;
+        overflow: hidden;
+    }
+    
+    
+    
+    .my-services-child-container
+    .my-services-video-content 
+    #btn .video-tag-pic{
+        width: 100%;
+        height: 165px;
+        position: relative;
+        border-radius: 6px;
+        transition: transform .5s linear;
+    }
+    .my-services-child-container
+    .my-services-video-content #btn 
+    .paly-tag {
+        width: 50px;
+        height: 50px;
+    }
+
+    .my-services-child-container
+    .my-services-video-content  #btn 
+    .paly-tag .play{
+        font-size:40px;
+        width: 20px;
+        height: 20px;
+        color:rgb(65, 65, 204);
+        background-color:#fff;
+        
+    }
+    
+    .my-services-child-container
+    .my-services-video-content  #btn 
+    .intro-tag{
+        color:#51586a;
+        background-color: #fff;
+        font-size:16px;
+        font-weight: 700;
+        padding: 8px 25px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        
+    }
+
+
+}
 
 /* Hidden section video
    ==================== */
@@ -7058,7 +7231,6 @@ a span{
    .completed-works-container{
     width:100%;
     height:1043px;
-    /* border:2px solid blue; */
    }
 
    .completed-works-container .completed-works-child{
@@ -7070,8 +7242,6 @@ a span{
    
    .completed-works-child .completed-works-heading{
     width:1210px;
-    height:96px;
-    /* border:2px solid blue; */
     margin-top:100px;
     display: flex;
     justify-content: space-between;
@@ -7082,7 +7252,6 @@ a span{
    .completed-works-heading .works-heading-left{
     width: 500px;
     height: 100%;
-    /* border:2px solid blue; */
    }
 
    .completed-works-heading .works-heading-left span{
@@ -7103,13 +7272,11 @@ a span{
   .completed-works-heading .works-heading-right{
     width:114px;
     height:96px;
-    /* border:2px solid blue; */
   }
 
   .completed-works-child .completed-works-boxes-parent {
     width:1240px;
     height:550px;
-    /* border:2px solid blue; */
     overflow: hidden;
   }
 
@@ -7117,7 +7284,6 @@ a span{
   .completed-works-boxes-child {
     width:1654px;
     height:550px;
-    /* border:2px solid blue; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -7126,14 +7292,11 @@ a span{
   .completed-works-boxes-child .project-box{
     width:383.33px;
     height:548.14px;
-    /* border:2px solid blue; */
   }
 
   .completed-works-boxes-child .project-box .project-image{
     width:383.33px;
     height:445.14px;
-    /* border:2px solid blue; */
-    /* background-size: cover; */
     overflow: hidden;
   }
 
@@ -7145,7 +7308,6 @@ a span{
   .project-box .project-details { 
      width: 100%;
      height:76px;
-     /* border: 2px solid blue; */
      margin-top: 22px;
   }
 
@@ -7209,7 +7371,6 @@ a span{
     .completed-works-container{
         width:100%;
         height:882.88px;
-        border:2px solid red;
        }
     
        .completed-works-container .completed-works-child{
@@ -7222,7 +7383,6 @@ a span{
        .completed-works-child .completed-works-heading{
         width:960px;
         height:80px;
-        border:2px solid blue;
         margin-top:100px;
         display: flex;
         justify-content: space-between;
@@ -7233,7 +7393,6 @@ a span{
        .completed-works-heading .works-heading-left{
         width: 400px;
         height: 100%;
-        /* border:2px solid blue; */
        }
     
        .completed-works-heading .works-heading-left span{
@@ -7260,7 +7419,6 @@ a span{
       .completed-works-child .completed-works-boxes-parent {
         width:960px;
         height:442.38px;
-        border:2px solid blue;
         /* overflow: hidden; */
       }
     
@@ -7268,7 +7426,6 @@ a span{
       .completed-works-boxes-child {
         width:1320px;
         height:442.38px;
-        border:2px solid blue;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -7277,14 +7434,11 @@ a span{
       .completed-works-boxes-child .project-box{
         width:300px;
         height:442.38px;
-        /* border:2px solid blue; */
       }
     
       .completed-works-boxes-child .project-box .project-image{
         width:300px;
         height:348.88px;
-        /* border:2px solid blue; */
-        /* background-size: cover; */
         overflow: hidden;
       }
     
@@ -7296,7 +7450,6 @@ a span{
       .project-box .project-details { 
          width: 100%;
          height:67px;
-         /* border: 2px solid blue; */
          margin-top: 22px;
       }
     
@@ -7322,7 +7475,6 @@ a span{
       }
     
       .completed-works-child .completed-works-bottom {
-         /* border:2px solid blue; */
          width: 100%;
          height: 100px;
          display: flex;
@@ -7362,7 +7514,6 @@ a span{
     .completed-works-container{
         width:100%;
         height:810px;
-        border:2px solid red;
        }
     
        .completed-works-container .completed-works-child{
@@ -7375,7 +7526,6 @@ a span{
        .completed-works-child .completed-works-heading{
         width:770px;
         height:80px;
-        border:2px solid blue;
         margin-top:100px;
         display: flex;
         justify-content: space-between;
@@ -7412,15 +7562,12 @@ a span{
       .completed-works-child .completed-works-boxes-parent {
         width:790px;
         height:369px;
-        border:2px solid blue;
-        /* overflow: hidden; */
       }
     
       .completed-works-child .completed-works-boxes-parent
       .completed-works-boxes-child {
         width:1067px;
         height:369px;
-        border:2px solid blue;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -7429,7 +7576,6 @@ a span{
       .completed-works-boxes-child .project-box{
         width:237px;
         height:369px;
-        border:2px solid blue;
       }
     
       .completed-works-boxes-child .project-box .project-image{
@@ -7502,8 +7648,6 @@ a span{
 
   }
 
-
-
    /*   Meida query 1600
   -----------------------------------
   Recently completed works section 
@@ -7514,7 +7658,7 @@ a span{
     .completed-works-container{
         width:100%;
         height:1060px;
-        border:2px solid red;
+        /* border:2px solid red; */
        }
     
        .completed-works-container .completed-works-child{
@@ -7527,7 +7671,6 @@ a span{
        .completed-works-child .completed-works-heading{
         width:95%;
         height:80px;
-        border:2px solid blue;
         margin-top:100px;
         display: flex;
         justify-content: space-between;
@@ -7564,31 +7707,27 @@ a span{
       .completed-works-child .completed-works-boxes-parent {
         width:95%;
         height:625.86px;
-        border:2px solid blue;
         overflow: hidden;
       }
     
       .completed-works-child .completed-works-boxes-parent
       .completed-works-boxes-child {
-        width:1952px;
-        height:625.86px;
-        border:2px solid blue;
+        width:210%;
+        height: 625px;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
     
       .completed-works-boxes-child .project-box{
-        width:458px;
+        width:23%;
         height:625px;
         /* border:2px solid blue; */
       }
     
       .completed-works-boxes-child .project-box .project-image{
-        width:458px;
+        width:100%;
         height:531px;
-        /* border:2px solid blue; */
-        /* background-size: cover; */
         overflow: hidden;
       }
     
@@ -7655,6 +7794,140 @@ a span{
 
 
   }
+
+  @media(max-width:700px){
+
+    .completed-works-child .completed-works-heading{
+        width:95%;
+        height:150px;
+        margin-top:100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+       }
+
+       .completed-works-heading .works-heading-left{
+        width: 100%;
+        height: auto;
+       }
+    
+       .completed-works-heading .works-heading-left span{
+         font-weight:500;
+         text-transform: uppercase;
+         font-size: 18px;
+         color: #55527C;;
+         padding-top: 4px;
+       }
+    
+       .completed-works-heading .works-heading-left h3{
+        font-weight:800;
+        font-size: 35px;
+        color: #130F49;
+        padding-top: 10px;
+      }
+    
+      .completed-works-heading .works-heading-right{
+        width:100%;
+        height:40xp;
+      }
+       
+                            
+    .completed-works-child .completed-works-boxes-parent {
+        width:95%;
+        height:625.86px;
+        overflow: hidden;
+      }
+    
+      .completed-works-child .completed-works-boxes-parent
+      .completed-works-boxes-child {
+        width:400%;
+        height: 625px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .completed-works-boxes-child .project-box{
+        width:100%;
+        height:625px;
+      }
+
+      
+  }
+
+
+  @media(max-width:500px){
+    .completed-works-child .completed-works-boxes-parent {
+        width:95%;
+        height:625.86px;
+        overflow: hidden;
+      }
+    
+      .completed-works-child .completed-works-boxes-parent
+      .completed-works-boxes-child {
+        width:400%;
+        height: 625px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .completed-works-boxes-child .project-box{
+        width:100%;
+        height:625px;
+      }
+
+      .completed-works-boxes-child .project-box .project-image{
+        width:100%;
+        height:500px;
+        overflow: hidden;
+      }
+    
+      .project-box .project-image img{ 
+        width: 100%;
+        height: 100%;
+      }
+  }
+
+  @media(max-width:380px){
+    .completed-works-container{
+        width:100%;
+        height:950px;
+       }
+    .completed-works-child .completed-works-boxes-parent
+    .completed-works-boxes-child {
+      width:400%;
+      height: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .completed-works-child .completed-works-boxes-parent {
+        width:95%;
+        height:500px;
+        overflow: hidden;
+      }
+
+    .completed-works-boxes-child .project-box{
+        width:100%;
+        height:500px;
+      }
+
+    .completed-works-boxes-child .project-box .project-image{
+        width:100%;
+        height:350px;
+        overflow: hidden;
+      }
+    
+      .project-box .project-image img{ 
+        width: 100%;
+        height: 100%;
+      }
+  }
+
   /* ==================================
        Recently completed works end
      ================================== */
@@ -7753,7 +8026,6 @@ customer and clients work
     .customer-and-class-container {
         width: 100%;
         height: 600px;
-        border:2px solid blue;
     }
     
     .customer-and-class-container .customer-and-class-child {
@@ -7767,9 +8039,7 @@ customer and clients work
     .customer-and-class-container .customer-and-class-child .customer-class-heading{
         width: 960px;
         height: 80px;
-        font-family: 'Karla', sans-serif;
-        border:2px solid blue;
-        
+        font-family: 'Karla', sans-serif;        
     }
     
     .customer-and-class-container .customer-and-class-child .customer-class-heading span{
@@ -7792,7 +8062,6 @@ customer and clients work
     .customer-and-class-child .customer-boxes{
         width:960px;
         height: 354px;
-        border:2px solid blue;
         display:flex;
         justify-content:center;
         align-items: center;
@@ -7932,7 +8201,7 @@ customer and clients work
     
     .customer-and-class-child .customer-boxes{
         width:95%;
-        height: 536px;
+        height: auto;
         border:2px solid blue;
         display:flex;
         justify-content:start;
@@ -7944,7 +8213,9 @@ customer and clients work
     .customer-and-class-child .customer-boxes .customer-small-boxe-a, .customer-small-boxe-b,
     .customer-small-boxe-c, .customer-small-boxe-d, .customer-small-boxe-e, 
     .customer-small-boxe-f, .customer-small-boxe-g, .customer-small-boxe-h{
-        width:315.98px;
+        /* width:315.98px;
+        height: 176px; */
+        width: 33%;
         height: 176px;
         /* border:2px solid blue; */
         display: flex;
