@@ -895,10 +895,10 @@ a:hover{
 
     .intro-part-image-child-container .intro-part-image-paragraph
     .my-intro-heading ,.change-content{
-            font-size:30px;
+            font-size:25px;
             font-weight:800;
             color:#130F49;
-            /* padding-right: 60px; */
+            padding-right: 0;
     }
 }
 
