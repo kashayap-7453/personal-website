@@ -892,10 +892,15 @@ a:hover{
 
     .intro-part-image-child-container .intro-part-image-paragraph
     .my-intro-heading ,.change-content{
-            font-size:25px;
+            font-size:30px;
             font-weight:800;
             color:#130F49;
             padding-right: 0;
+    }
+
+    .intro-part-image-child-container .intro-part-image-paragraph 
+    .change-content{
+            display: block;
     }
 }
 
