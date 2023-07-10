@@ -58,7 +58,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border:2px solid blue; */
 }
 
 .navbar-content ul a{
@@ -143,7 +142,7 @@
     justify-content: center;
     align-items: center;
     height: 60px;
-    width: 200px;
+    width: 140px;
 }
 
  .click-button{
@@ -152,10 +151,8 @@
     display: flex;
     justify-content: center;
     align-items: center;   
-    /* display: none;  */
     font-size:35px; 
     color:#130F49;
-    /* display: none; */
 }
 
 .click-button .mobile-nav-icon[name="close-outline"]{
@@ -884,10 +881,10 @@ a:hover{
 @media(max-width:355px){
 
 
-        .right-main-section-container .right-main-section-container-child
+    .right-main-section-container .right-main-section-container-child
     .intro-part-image-container-parent{
         width:100%;
-        height: 1000px;
+        height: 950px;
         background-color: #effbf8;
         margin-top: 12%;
     }
@@ -2689,8 +2686,8 @@ p{
 
         .everthing-about-me-child-conatiner
         .everthing-about-me-child-conatiner-four-boxes{
-            width:95%;
-            height: 1200px;
+            width:90%;
+            height: 1150px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -2729,7 +2726,7 @@ p{
     }
 
 /* ======================================
-     Everything about me section start
+     Everything about me section end
 ========================================= */
 
 /* ===============================================
@@ -3150,7 +3147,6 @@ p{
 .my-services-six-boxes{
     width: 1240px;
     height: 652px;
-    /* border: 2px solid blue; */
     display:flex;
     justify-content: space-evenly;
     align-items: center;
@@ -3179,6 +3175,13 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.my-services-child-container
+.my-services-six-boxes
+.box-my-services-parent:hover{
+    margin-bottom:15px;
+    transition: all .3s linear;
 }
 
 
@@ -3253,6 +3256,12 @@ a span{
     justify-content: center;
     align-items: center;
 }
+.my-services-child-container
+.my-services-six-boxes
+.box-a-parent:hover{
+    margin-bottom:15px;
+    transition: all .3s linear;
+}
 
 
 .my-services-child-container
@@ -3325,6 +3334,12 @@ a span{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.my-services-child-container
+.my-services-six-boxes
+.box-c-parent:hover{
+    margin-bottom: 15px;
+    transition: all .3s linear;
 }
 
 
@@ -3400,6 +3415,12 @@ a span{
     justify-content: center;
     align-items: center;
 }
+.my-services-child-container
+.my-services-six-boxes
+.box-d-parent:hover{
+    margin-bottom: 15px;
+    transition:all .3s linear;
+}
 
 
 .my-services-child-container
@@ -3473,6 +3494,12 @@ a span{
     justify-content: center;
     align-items: center;
 }
+.my-services-child-container
+.my-services-six-boxes
+.box-e-parent:hover{
+    margin-bottom: 15px;
+    transition: all .3s linear;
+}
 
 
 .my-services-child-container
@@ -3545,6 +3572,12 @@ a span{
     justify-content: center;
     align-items: center;
 }
+.my-services-child-container
+.my-services-six-boxes
+.box-f-parent:hover{
+    margin-bottom:15px;
+    transition: all .3s linear;
+}
 
 
 .my-services-child-container
@@ -3552,7 +3585,6 @@ a span{
 .box-my-services{
      width: 301.33px;
      height: 207px;
-     /* border: 1px solid red; */
 }
 
 .box-my-services .heading-span p{
@@ -4910,14 +4942,7 @@ a span{
     a span{
          padding-left: 10px;
     }
-    
-    
-    /* =============Box D End ============= */
-    
-    
-    /* =============Box E start ============= */
-    
-    
+
     .my-services-child-container
     .my-services-six-boxes
     .box-e-parent{
@@ -4973,13 +4998,7 @@ a span{
     a span{
          padding-left: 10px;
     }
-    
-    
-    /* =============Box E End ============= */
-    
-    /* =============Box F start ============= */
-    
-    
+
     .my-services-child-container
     .my-services-six-boxes
     .box-f-parent{
@@ -5036,10 +5055,6 @@ a span{
     a span{
          padding-left: 10px;
     }
-
-    
-    /* =============Box F End ============= */
-
 
    
 }
@@ -5995,6 +6010,16 @@ a span{
 }
 
 @media(max-width:380px){
+    .my-services-child-container
+    .my-services-heading{
+        width: 90%;
+    }
+
+    .my-services-child-container
+    .my-services-six-boxes{
+        width: 90%;
+    }
+
     .my-services-container{
         width: 100%;
         height: 2265px;
@@ -6825,11 +6850,9 @@ a span{
         position:absolute;
         top:0;
         right: -50px;
-        /* transform: translate(-14%,-21%); */
         color: #fff;
         background-color: transparent;
         border: 2px solid #fff;
-        /* display: block; */
         z-index: 30;
         padding-top: 2px;
         padding-bottom: 1px;
@@ -6847,7 +6870,6 @@ a span{
        .hidden-image  img{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
         border: none;
         border-radius: 10px;
         margin-bottom:30px;
@@ -6857,8 +6879,6 @@ a span{
     .services-six-popup .services-hidden-box-child .servcies-list .my-service-image{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
-        /* border: none; */
         border-radius: 10px;
         margin-bottom:30px;
     }
@@ -6867,7 +6887,6 @@ a span{
     .services-six-popup .services-hidden-box-child .servcies-list .my-service-image img{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
         border: none;
         border-radius: 10px;
         margin-bottom:30px;
@@ -6877,7 +6896,6 @@ a span{
         width:100%;
         height: 39px;
         margin-top: 20px;
-        /* border: 2px solid blue; */
     }
     
     .servcies-list .services-heading h3{
@@ -6888,14 +6906,10 @@ a span{
     
     .servcies-list .service-paragraph{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
     }
     
     .servcies-list .service-paragraph p{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
         margin-bottom: 20px;
         opacity: .8;
         font-size: 18px;
@@ -7114,7 +7128,7 @@ a span{
 @media(max-width:380px){
     .my-services-child-container
     .my-services-video-content {
-        width: 95%;
+        width: 90%;
         height: 165px;
         position:relative;
         overflow: hidden;
@@ -7303,6 +7317,12 @@ a span{
   .project-box .project-image img{ 
     width: 100%;
     height: 100%;
+    transition: transform .5s linear;
+    position: relative;
+  }
+
+  .project-box .project-image img:hover{ 
+     transform: scale(1.2);
   }
 
   .project-box .project-details { 
@@ -7942,7 +7962,6 @@ a span{
 .customer-and-class-container {
     width: 100%;
     height: 508px;
-    /* border:2px solid blue; */
 }
 
 .customer-and-class-container .customer-and-class-child {
@@ -7956,9 +7975,7 @@ a span{
 .customer-and-class-container .customer-and-class-child .customer-class-heading{
     width: 1210px;
     height: 96px;
-    font-family: 'Karla', sans-serif;
-    /* border:2px solid blue; */
-    
+    font-family: 'Karla', sans-serif;    
 }
 
 .customer-and-class-container .customer-and-class-child .customer-class-heading span{
@@ -7994,7 +8011,6 @@ a span{
 .customer-small-boxe-f, .customer-small-boxe-g, .customer-small-boxe-h{
     width:301px;
     height: 176px;
-    /* border:2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8007,7 +8023,6 @@ a span{
 }
 
 .customer-and-class-child .customer-boxes .customer-small-boxe-d{
-    /* border-right: 2px solid #e7e7e7; */
     border-bottom: 2px solid #e7e7e7;
 }
 
@@ -8162,7 +8177,6 @@ customer and clients work
     .customer-and-class-container {
         width: 100%;
         height: 800px;
-        border:2px solid blue;
     }
     
     .customer-and-class-container .customer-and-class-child {
@@ -8172,37 +8186,10 @@ customer and clients work
         flex-direction:column;
         
     }
-    
-    .customer-and-class-container .customer-and-class-child .customer-class-heading{
-        width: 95%;
-        height: 80px;
-        font-family: 'Karla', sans-serif;
-        border:2px solid blue;
-        margin-top: 40px;
         
-    }
-    
-    .customer-and-class-container .customer-and-class-child .customer-class-heading span{
-         font-size: 16px;
-         line-height:30px;
-         font-weight: 500;
-         text-transform: uppercase;
-        padding-bottom: 9px;
-         color: #55527C;
-         display: block;
-        
-    }
-    
-    .customer-and-class-container .customer-and-class-child .customer-class-heading h4{
-         font-size: 35px;
-         line-height:30px;
-         font-weight: 800;
-    }
-    
     .customer-and-class-child .customer-boxes{
         width:95%;
         height: auto;
-        border:2px solid blue;
         display:flex;
         justify-content:start;
         align-items: center;
@@ -8213,11 +8200,8 @@ customer and clients work
     .customer-and-class-child .customer-boxes .customer-small-boxe-a, .customer-small-boxe-b,
     .customer-small-boxe-c, .customer-small-boxe-d, .customer-small-boxe-e, 
     .customer-small-boxe-f, .customer-small-boxe-g, .customer-small-boxe-h{
-        /* width:315.98px;
-        height: 176px; */
         width: 33%;
         height: 176px;
-        /* border:2px solid blue; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -8263,8 +8247,7 @@ customer and clients work
 @media(max-width:1010px){
     .customer-and-class-container {
         width: 100%;
-        height: 800px;
-        border:2px solid blue;
+        height: 750px;
     }
     
     .customer-and-class-container .customer-and-class-child {
@@ -8279,7 +8262,6 @@ customer and clients work
         width: 95%;
         height: 80px;
         font-family: 'Karla', sans-serif;
-        border:2px solid blue;
         margin-top: 40px;
         
     }
@@ -8303,10 +8285,9 @@ customer and clients work
     
     .customer-and-class-child .customer-boxes{
         width:95%;
-        height: 536px;
-        border:2px solid blue;
+        height:auto;
         display:flex;
-        justify-content:start;
+        justify-content:center;
         align-items: center;
         flex-wrap: wrap;
         margin-top: 50px;
@@ -8315,43 +8296,144 @@ customer and clients work
     .customer-and-class-child .customer-boxes .customer-small-boxe-a, .customer-small-boxe-b,
     .customer-small-boxe-c, .customer-small-boxe-d, .customer-small-boxe-e, 
     .customer-small-boxe-f, .customer-small-boxe-g, .customer-small-boxe-h{
-        width:315.98px;
+        width:31.36%;
         height: 176px;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    }    
 
-    .customer-and-class-child .customer-boxes .customer-small-boxe-a, .customer-small-boxe-b{
+    .customer-and-class-child .customer-small-boxe-h{
+     margin-right:31.36%;
+    }  
+
+}
+
+
+/* Media query 635px 
+-----------------------
+customer and clients work
+---------------------------------- */
+
+@media(max-width:635px){
+    .customer-and-class-container {
+        width: 100%;
+        height: 1000px;
+    }
+    
+    .customer-and-class-container .customer-and-class-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        
+    }
+    
+    
+    .customer-and-class-child .customer-boxes{
+        width:95%;
+        height:auto;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    
+    .customer-and-class-child .customer-boxes .customer-small-boxe-a, .customer-small-boxe-b,
+    .customer-small-boxe-c, .customer-small-boxe-d, .customer-small-boxe-e, 
+    .customer-small-boxe-f, .customer-small-boxe-g, .customer-small-boxe-h{
+        width:250px;
+        height: 176px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .customer-and-class-child .customer-small-boxe-h{
+     margin-right:0;
+    }  
+    .customer-and-class-child .customer-boxes .customer-small-boxe-a{
         border-right: 2px solid #e7e7e7;
         border-bottom: 2px solid #e7e7e7;
     }
 
+    .customer-and-class-child .customer-boxes .customer-small-boxe-b{
+        border-right:none;
+        border-bottom: 2px solid #e7e7e7;
+    }
     .customer-and-class-child .customer-boxes .customer-small-boxe-c{
+        border-right: 2px solid #e7e7e7;
         border-bottom: 2px solid #e7e7e7;
+    }
+    .customer-and-class-child .customer-boxes .customer-small-boxe-d{
         border-right: none;
-    }
-    
-    
-    .customer-and-class-child .customer-boxes .customer-small-boxe-d ,.customer-small-boxe-e{
         border-bottom: 2px solid #e7e7e7;
-        border-right:  2px solid #e7e7e7;
     }
-
+    .customer-and-class-child .customer-boxes .customer-small-boxe-e{
+        border-right: 2px solid #e7e7e7;
+        border-bottom: 2px solid #e7e7e7;
+    }
     .customer-and-class-child .customer-boxes .customer-small-boxe-f{
+        border-right: none;
         border-bottom: 2px solid #e7e7e7;
-        border-right:  none;
     }
-    
-    .customer-and-class-child .customer-boxes  
-    .customer-small-boxe-g, .customer-small-boxe-h{
+    .customer-and-class-child .customer-boxes .customer-small-boxe-g{
         border-right: 2px solid #e7e7e7;
         border-bottom: none;
     }
-    
-    
+    .customer-and-class-child .customer-boxes .customer-small-boxe-h{
+        border-right :none;
+        border-bottom:none;
+    }
+
+
 
 }
+
+/* Media query 634px 
+-----------------------
+customer and clients work
+---------------------------------- */
+
+@media(max-width:634px){
+    .customer-and-class-container {
+        width: 100%;
+        height: 1000px;
+    }
+    
+    .customer-and-class-container .customer-and-class-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        
+    }
+    
+    .customer-and-class-container .customer-and-class-child .customer-class-heading{
+        width: 95%;
+        height: 120px;
+        font-family: 'Karla', sans-serif;
+        margin-top: 45px;
+        
+    }
+    
+    
+    .customer-and-class-child .customer-boxes .customer-small-boxe-a, .customer-small-boxe-b,
+    .customer-small-boxe-c, .customer-small-boxe-d, .customer-small-boxe-e, 
+    .customer-small-boxe-f, .customer-small-boxe-g, .customer-small-boxe-h{
+        width:42%;
+        height: 176px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+
+}
+
+
+
 
    /* ==================================
            customer and clients end
@@ -8367,7 +8449,6 @@ customer and clients work
 .testimonial-container{
     width: 100%;
     height:666px;
-    /* border:2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8387,13 +8468,11 @@ customer and clients work
 .testimonial-container .testimonial-child .testimonial-heading-image-parent{
     width: 960px;
     height:500px;
-    /* border:2px solid blue; */
 }
 
 .testimonial-heading-image-parent  .testimonial-heading{
     width:100%;
     height: 96px;
-    /* border: 2px solid blue; */
     text-align: center;
 }
 
@@ -8405,7 +8484,6 @@ customer and clients work
      text-transform: uppercase;
      display: block;
      padding: 10px 20px;
-     /* border: 2px solid blue; */
 }
 
 .testimonial-heading-image-parent  .testimonial-heading h3{
@@ -8523,7 +8601,6 @@ Testimonial container section
     .testimonial-container{
         width: 100%;
         height:684.5px;
-        border:2px solid blue;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -8533,7 +8610,6 @@ Testimonial container section
     .testimonial-container .testimonial-child{
         width: 960px;
         height:684.5px;
-        border:2px solid blue;
         background-color:#fff5f6;
         display: flex;
         justify-content: center;
@@ -8543,13 +8619,11 @@ Testimonial container section
     .testimonial-container .testimonial-child .testimonial-heading-image-parent{
         width: 710px;
         height:500px;
-        border:2px solid red;
     }
     
     .testimonial-heading-image-parent  .testimonial-heading{
         width:100%;
         height: 80px;
-        border: 2px solid blue;
         text-align: center;
     }
     
@@ -8574,7 +8648,6 @@ Testimonial container section
     .testimoinal-userinterface-section .testimonial-paragraph{
         width: 100%;
         height: 160px;
-        border:2px solid blue;
         margin-top: 43px;
         
     }
@@ -8592,7 +8665,6 @@ Testimonial container section
     .testimoinal-userinterface-section .image-heading{
         width: 100%;
         height: 60px;
-        border: 1px solid blue;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -8618,7 +8690,6 @@ Testimonial container section
         width: 100%;
         height: 30px;
         text-align: center;
-        border: 2px solid blue;
     }
     
     .testimoinal-userinterface-section .deails-experince p{
@@ -8634,7 +8705,6 @@ Testimonial container section
     .testimonials-buttons{
         width: 100%;
         height: 100px;
-        border: 2px solid red;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -8775,8 +8845,7 @@ Testimonial container section
 @media(max-width:1050px){
     .testimonial-container{
         width: 100%;
-        height:618px;
-        border:2px solid red;
+        height:680px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -8785,7 +8854,7 @@ Testimonial container section
     
     .testimonial-container .testimonial-child{
         width: 95%;
-        height:618px;
+        height:680px;
         background-color:#fff5f6;
         display: flex;
         justify-content: center;
@@ -8794,8 +8863,7 @@ Testimonial container section
     
     .testimonial-container .testimonial-child .testimonial-heading-image-parent{
         width: 80%;
-        height:450px;
-        border:2px solid red;
+        height:70%;
     }
     
     .testimonial-heading-image-parent  .testimonial-heading{
@@ -8824,19 +8892,21 @@ Testimonial container section
     
     .testimoinal-userinterface-section .testimonial-paragraph{
         width: 100%;
-        height: 160px;
+        height: auto;
         margin-top: 43px;
+        margin-bottom:20px;
         
     }
     
     .testimoinal-userinterface-section .testimonial-paragraph p{
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 400;
-        line-height:40px;
+        line-height:33px;
         color: #55527C;
         word-wrap: break-word;
         text-align: center;
         padding: 0 15px;
+        opacity: .8;
     }
     
     .testimoinal-userinterface-section .image-heading{
@@ -8889,6 +8959,45 @@ Testimonial container section
     }
     
 
+}
+
+/* Media query 550px 
+--------------------
+Testimonial container section 
+---------------------------------- */
+
+@media(max-width:550px){
+    .testimonial-container{
+        width: 100%;
+        height:715px;
+    }
+    
+    .testimonial-container .testimonial-child{
+        width: 95%;
+        height:715px;
+    }
+    
+    .testimonial-container .testimonial-child .testimonial-heading-image-parent{
+        width: 85%;
+        height:80%;
+    }
+}
+
+@media(max-width:380px){
+    .testimonial-container{
+        width: 100%;
+        height:775px;
+    }
+    
+    .testimonial-container .testimonial-child{
+        width: 95%;
+        height:775px;
+    }
+    .testimonial-heading-image-parent  .testimonial-heading{
+        width:100%;
+        height: 120px;
+        text-align: center;
+    }
 }
  /*==================================
         Testimonial container end
@@ -9257,13 +9366,13 @@ Testimonial container section
     .my-blogs-container
     {
       width: 100%;
-      height:1600px;
+      height:1650px;
     }
   
     .my-blogs-container .my-blogs-clild
     {
       width: 95%;
-      height:1500px;
+      height:1550px;
       display:flex;
       justify-content: space-evenly;
       flex-direction: column;
@@ -9275,7 +9384,7 @@ Testimonial container section
       width: 100%;
       height:auto;
       padding-bottom: 40px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
   
     .my-blogs-heading-buttons .my-blogs-title{
@@ -9352,6 +9461,24 @@ Testimonial container section
     .blog-child .blog-arrow p,span{
       font-size: 16px;
 
+    }
+  }
+
+  @media(max-width:450px){
+    .my-blogs-container
+    {
+      width: 100%;
+      height:1750px;
+    }
+  
+    .my-blogs-container .my-blogs-clild
+    {
+      width: 95%;
+      height:1650px;
+      display:flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -9809,4 +9936,73 @@ contact section
         padding-left:20px;
         overflow: hidden;
       }
+}
+
+
+
+/* 
+  Media query 1050px
+  --------------------------
+contact section 
+-----------------------------------
+   */
+
+   @media(max-width:420px){
+    .contact-section-container {
+        width:100%;
+        height: 1500px;
+      }
+    
+      .contact-section-container  .contact-section-child{
+        width:95%;
+        height: 1220px;  
+      }
+    
+
+      .contact-section-detais .contact-details ,.contact-section {
+        width: 100%;
+        height: 400px;
+        margin-bottom:40px;
+      }
+
+    
+     .contact-details .contact-details-pargraph {
+        width: 100%;
+        height: 140px;
+        margin-bottom: 20px;
+     }
+    
+     .contact-details .contact-details-pargraph p{
+        font-size:16px;
+        line-height: 30px;
+     }
+     
+    
+     .contact-details .contact-details-personal {
+        width: 100%;
+        height: 112px;
+        display: flex;
+        flex-direction: column;
+     }
+
+      .contact-section  .contact-section-material .text textarea{
+        width: 85%;
+        height: 75px;
+        resize: none;
+        font-size: 16px;
+        border: 1px solid #eee;
+        padding:20px;
+      }
+
+      .contact-section-detais .contact-section .contact-section-material .equal input{
+        width: 90%;
+        height: 60px;
+        font-size: 16px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        border: 1px solid #eee;
+        padding-left:20px;
+        /* overflow: hidden; */
+      }
+
 }
