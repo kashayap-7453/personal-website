@@ -153,7 +153,7 @@ document.querySelector(".six-popup-close").addEventListener('click' , function()
 
 
 // =========================================
-//     Navbar icon
+//     Navbar section start
 // =========================================
 
 const moblieNav = document.querySelector(".click-button");
@@ -165,3 +165,128 @@ const toggleNavbar = () => {
 };
 
 moblieNav.addEventListener("click" , () => toggleNavbar());
+
+
+// =========================================
+//     Navbar section end
+// =========================================
+
+
+// =========================================
+//     My blog section start
+// =========================================
+
+// box 1
+// -------
+document.querySelector("#blog-box-a").addEventListener("click", function(){
+  document.querySelector(".blog-hidden-a").style.display = "block";
+})
+
+document.querySelector(".blog-close-a").addEventListener("click" , function(){
+  document.querySelector(".blog-hidden-a").style.display = "none";
+})
+
+// box 2
+// -------
+
+document.querySelector("#blog-box-b").addEventListener("click" , function(){
+  document.querySelector(".blog-hidden-b").style.display = "block";
+})
+
+document.querySelector(".blog-close-b").addEventListener("click" ,function(){
+  document.querySelector(".blog-hidden-b").style.display = "none";
+})
+
+// box 3
+// -------
+
+document.querySelector("#blog-box-c").addEventListener("click" , function(){
+  document.querySelector(".blog-hidden-c").style.display = "block";
+})
+
+document.querySelector(".blog-close-c").addEventListener("click" ,function(){
+  document.querySelector(".blog-hidden-c").style.display = "none";
+})
+
+// box 4
+// -------
+
+document.querySelector("#blog-box-d").addEventListener("click" , function(){
+  document.querySelector(".blog-hidden-d").style.display = "block";
+})
+
+document.querySelector(".blog-close-d").addEventListener("click" , function(){
+  document.querySelector(".blog-hidden-d").style.display =  "none";
+})
+
+// box 5
+// -------
+
+document.querySelector("#blog-box-e").addEventListener("click" , function(){
+  document.querySelector(".blog-hidden-e").style.display = "block";
+})
+
+document.querySelector(".blog-close-e").addEventListener("click" ,function(){
+  document.querySelector(".blog-hidden-e").style.display = "none";
+})
+
+// box 6
+// -------
+
+document.querySelector("#blog-box-f").addEventListener("click" , function(){
+  document.querySelector(".blog-hidden-f").style.display = "block";
+})
+
+document.querySelector(".blog-close-f").addEventListener("click" ,function(){
+  document.querySelector(".blog-hidden-f").style.display = "none";
+})
+
+// box 7
+// -------
+
+document.querySelector("#blog-box-g").addEventListener("click" , function(){
+  document.querySelector(".blog-hidden-g").style.display = "block";
+})
+
+document.querySelector(".blog-close-g").addEventListener("click" ,function(){
+  document.querySelector(".blog-hidden-g").style.display = "none";
+})
+
+
+
+
+// =========================================
+//     Testimonial section start
+// =========================================
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("testimoinal-userinterface-section");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+// =========================================
+//     Testimonial section end
+// =========================================
+
