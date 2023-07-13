@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 /* ============================
        Navbaar section start 
 =============================== */
@@ -68,6 +72,10 @@
      color:#130F49;
      font: 500;
 }
+/* .navbar-content ul li a:active{
+    color:blue;
+    transition: all .3s linear;
+} */
 
 .navbar-content ul{
     list-style-type:none;
@@ -77,8 +85,10 @@
    padding:10px;
 }
 
+
 .navbar-content ul .home-anchor{
-    color:#A5A6FF;
+    /* color:#A5A6FF; */
+    color: #130F49;
     font-size:16px;
  }
 
@@ -950,7 +960,6 @@ a:hover{
 .project-happy-clients-child-container{
     width:100%;
     height: 819px;
-    /* border:2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -961,7 +970,6 @@ a:hover{
 .project-happy-clients{
     width:1210px;
     height: 600px;
-    /* border:2px solid blue; */
 }
 
 .project-happy-clients 
@@ -975,14 +983,12 @@ a:hover{
 .project-happy-clients-small-paragraph{
     width: 40%;
     height: 318px;
-    /* border:2px solid blue; */
 }
 
 .project-happy-clients .project-happy-clients-two-paragraph
 .project-happy-clients-big-paragraph{
     width: 60%;
     height: 318px;
-    /* border:2px solid blue; */
 }
 
 .project-happy-clients-small-paragraph
@@ -1104,7 +1110,6 @@ a:hover{
     align-items: center;
     width: 100%;
     height:275px;
-    /* border:2px solid red; */
 }
 
 
@@ -1112,7 +1117,6 @@ a:hover{
 .three-boxes-experince-project{
     width: 100%;
     height:210px;
-    /* border:2px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1988,7 +1992,6 @@ Project happy client section
 .everthing-about-me-child-conatiner{
     width:100%;
     height: 918px;
-    /* border:2px solid blue; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -2024,7 +2027,6 @@ h5{
 .everthing-about-me-child-conatiner-four-boxes{
     width:1240px;
     height: 610px;
-    /* border:2px solid red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -2740,6 +2742,7 @@ p{
     left: 0;
     background: rgba(0,0,0,.8);
     display: none;
+    z-index: 100;
 }
 
 #popup:target{
@@ -2760,7 +2763,7 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
+    z-index: 100;
    }
 
 
@@ -2770,7 +2773,7 @@ p{
     height: 600px;
     /* border:2px solid blue; */
     overflow-y:scroll;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     /* display: none; */
    }
 
@@ -2862,23 +2865,127 @@ p{
  
    #popup a.close-popup{
     font-size: 25px;
-    border: 2px solid black;
-    padding: 1px 4px;
-    border-radius: 4px;
-    color:black;
-    z-index:2;
-    background-color: white;
-    position: absolute;
+    font-weight: 800;
+    position:absolute;
     top:0;
-    right: 0;
-    margin: 60px 12px;
-    text-decoration: none;
+    right: -50px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    z-index: 999;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 8px;
+    transition: all .1s linear;
    } 
+
 
 
    #popup a.close-popup:hover{ 
      border-radius: 50%;
    } 
+
+   /* @media section start popup section  */
+
+   /* @media(max-width:1200px){
+    #popup{
+        width: 100vw;
+        height: 100vh;
+    }
+
+       #popup
+       #popup-conten{
+        width: 768px;
+        height: 711.5px;
+       }
+    
+    
+       #popup-conten
+       .hidden-development-small-section{
+        width: 657px;
+        height: 600px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+       }
+
+       .hidden-development-small-section
+       .hidden-image  {
+        width: 100%;
+        height: 300px;
+        margin-bottom:150px;
+       }
+    
+       .hidden-development-small-section
+       .hidden-image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom:30px;
+        border:2px solid black;
+       }
+    
+       .hidden-development-small-section
+       .year-persent span{
+         background-color: #000;
+         color: #FF972D;
+         font-size: 18px;
+         font-weight: 400;
+         word-wrap: break-word;
+         border: none;
+         border-radius: 4px;
+         padding: 8px 20px;
+         margin-bottom: 10px;
+       }
+    
+       .hidden-development-small-section
+       .year-persent{
+         width: 100%;
+         height:50px;
+       }
+    
+       .hidden-development-small-section
+       .hidden-heading-para{
+        width: 100%;
+        height: 70px;
+        margin-bottom: 20px;
+       }
+    
+       .hidden-development-small-section
+       .hidden-heading-para span{
+        font-size:18px;
+        font-weight: 400;
+        margin-bottom: 4px;
+        word-wrap: break-word;
+        line-height: 32px;
+        color: #55527C;
+       }
+    
+       .hidden-development-small-section
+       .hidden-heading-para h6{
+        font-size:25px;
+        font-weight: 700;
+        word-wrap: break-word;
+        color: #130F49;
+       }
+    
+       .hidden-development-small-section
+       .hidden-all-paragraph{
+        width: 100%;
+        height: 400px;
+       }
+    
+       .hidden-development-small-section
+       .hidden-all-paragraph p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-bottom: 15px;
+       }
+     
+    
+   } */
 
    
 
@@ -2898,6 +3005,7 @@ p{
     left: 0;
     background: rgba(0,0,0,.8);
     display: none;
+    z-index: 100;
 }
 
 #popup-a:target{
@@ -2918,23 +3026,30 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
+    z-index: 100;
    }
  
    #popup-a a.close-popup{
     font-size: 25px;
-    border: 2px solid #fff;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color:white;
-    z-index:2;
-    background-color: black;
-    position: absolute;
+    font-weight: 800;
+    position:absolute;
     top:0;
-    right: 0;
-    margin: 60px 8px;
-    text-decoration: none;
+    right: -50px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    z-index: 999;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 8px;
+    transition: all .1s linear;
    } 
+
+   #popup-a a.close-popup:hover{
+    border-radius:50%;
+   }
 
 
 
@@ -2979,18 +3094,24 @@ p{
  
    #popup-b a.close-popup{
     font-size: 25px;
-    border: 2px solid #fff;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color:white;
-    z-index:2;
-    background-color: black;
-    position: absolute;
+    font-weight: 800;
+    position:absolute;
     top:0;
-    right: 0;
-    margin: 60px 8px;
-    text-decoration: none;
+    right: -50px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    z-index: 999;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 8px;
+    transition: all .1s linear;
    } 
+   #popup-b a.close-popup:hover{
+    border-radius:50%;
+   }
 
 
 
@@ -3035,19 +3156,25 @@ p{
  
    #popup-c a.close-popup{
     font-size: 25px;
-    border: 2px solid #fff;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color:white;
-    z-index:2;
-    background-color: black;
-    position: absolute;
+    font-weight: 800;
+    position:absolute;
     top:0;
-    right: 0;
-    margin: 60px 8px;
-    text-decoration: none;
+    right: -50px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    z-index: 999;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 8px;
+    transition: all .1s linear;
    } 
 
+   #popup-c a.close-popup:hover{
+    border-radius:50%;
+   }
 
 
            /* Hidden content end 
@@ -6111,22 +6238,13 @@ a span{
        .services-hidden-box-parent .service-close:hover{
          border-radius: 50%;
        }
-    
-       .hidden-development-small-section
-       .hidden-image  img{
-        width: 100%;
-        height: 428px;
-        border: none;
-        border-radius: 10px;
-        margin-bottom:30px;
-       }
-    
+ 
     
     .services-hidden-box-parent .services-hidden-box-child .servcies-list .my-service-image{
         width: 100%;
         height: 428px;
         border-radius: 10px;
-        margin-bottom:30px;
+        margin-bottom:0;
     }
     
     
@@ -6135,17 +6253,17 @@ a span{
         height: 428px;
         border: none;
         border-radius: 10px;
-        margin-bottom:30px;
+        margin-bottom:0;
     }
     
     .servcies-list .services-heading{
         width:100%;
         height: 39px;
-        margin-top: 20px;
     }
     
     .servcies-list .services-heading h3{
         font-size: 25px;
+        padding:0;
         font-weight:700;
         color: #130F49;
     }
@@ -6165,7 +6283,7 @@ a span{
         color: #55527C;
     }
     
-    /* Media query section 
+    /* Media query 1200px
     ----------------------------- */
     @media(max-width:1200px){
         .services-hidden-box-parent {
@@ -6174,42 +6292,34 @@ a span{
         }
         
         .services-hidden-box-parent .services-hidden-box-child{
-            width: 968px;
+            width: 668px;
             height: 711.5px;
         }
         
         .services-hidden-box-parent .services-hidden-box-child .servcies-list{
-            width:857px;
+            width:557px;
             height: 600px;
-        }
-
-           .hidden-development-small-section
-           .hidden-image  img{
-            width: 100%;
-            height: 428px;
-            border-radius: 10px;
-            margin-bottom:30px;
-           }
-        
+        }        
         
         .services-hidden-box-parent .services-hidden-box-child .servcies-list .my-service-image{
             width: 100%;
-            height: 428px;
+            height: 350px;
             margin-bottom:30px;
         }
         
         
         .services-hidden-box-parent .services-hidden-box-child .servcies-list .my-service-image img{
             width: 100%;
-            height: 428px;
+            height: 350px;
             border-radius: 10px;
             margin-bottom:30px;
         }
         
         .servcies-list .services-heading{
             width:100%;
-            height: 39px;
-            margin-top: 20px;
+            height: 50px;
+            margin-top: 0;
+            padding:5px 0;
         }
         
         .servcies-list .services-heading h3{
@@ -6229,6 +6339,93 @@ a span{
             line-height: 30px;
         }
     }
+
+    /* Media query 800px
+    ----------------------------- */
+    @media(max-width:800px){
+        .services-hidden-box-parent {
+            width: 100vw;
+            height:100vh;
+        }
+        
+        .services-hidden-box-parent .services-hidden-box-child{
+            width: 468px;
+            height: 711.5px;
+        }
+        
+        .services-hidden-box-parent .services-hidden-box-child .servcies-list{
+            width:377px;
+            height: 620px;
+        }        
+        
+        .services-hidden-box-parent .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 350px;
+            margin-bottom:30px;
+        }
+        
+        
+        .services-hidden-box-parent .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            margin-bottom:30px;
+        }
+
+        .services-hidden-box-parent .service-close{
+            font-size: 30px;
+            font-weight: 900;
+            position:absolute;
+            top:5px;
+            right: 5px;
+            color: #130F49;
+            background-color: transparent;
+            border: 2px solid #fff;
+            z-index: 999;
+            padding: auto;
+            border-radius: none;
+            transition: all .1s linear;
+            font-family:fantasy;
+            border: none;
+           }
+        
+
+    }
+
+        /* Media query 800px
+    ----------------------------- */
+    @media(max-width:600px){
+        .services-hidden-box-parent {
+            width: 100vw;
+            height:100vh;
+        }
+        
+        .services-hidden-box-parent .services-hidden-box-child{
+            width: 300px;
+            height: 711.5px;
+        }
+        
+        .services-hidden-box-parent .services-hidden-box-child .servcies-list{
+            width:239px;
+            height: 620px;
+        }        
+        
+        .services-hidden-box-parent .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 120px;
+            margin-bottom:30px;
+        }
+        
+        
+        .services-hidden-box-parent .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+            margin-bottom:30px;
+        }
+      
+
+    }
     
         /* my service 1st box end */
     
@@ -6243,16 +6440,14 @@ a span{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 30;
+        z-index: 100;
         transition: all o.5s linear;
-        display:none;
-    
+        display:none;    
     }
     
     .services-second-popup .services-hidden-box-child{
         width: 968px;
         height: 711.5px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6260,13 +6455,13 @@ a span{
         background-color: #fff;
         font-family: 'Karla', sans-serif;
         border-radius: 4px;
+        z-index: 100;
     }
     
     
     .services-second-popup .services-hidden-box-child .servcies-list{
         width:857px;
         height: 600px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6276,32 +6471,15 @@ a span{
         border-radius:4px;
     }
     
-    
-    .services-hidden-box-child .servcies-list::-webkit-scrollbar{
-        width: 5px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-track{
-        border-radius: 10px;
-        padding-left: 60px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-thumb{
-        border-radius: 10px;
-        background:#b8b1b1ab;
-       }
-    
        .services-second-popup .second-popup-close{
         font-size: 25px;
         font-weight: 800;
         position:absolute;
         top:0;
         right: -50px;
-        /* transform: translate(-14%,-21%); */
         color: #fff;
         background-color: transparent;
         border: 2px solid #fff;
-        /* display: block; */
         z-index: 30;
         padding-top: 2px;
         padding-bottom: 1px;
@@ -6315,22 +6493,9 @@ a span{
          border-radius: 50%;
        }
     
-       .hidden-development-small-section
-       .hidden-image  img{
-        width: 100%;
-        height: 428px;
-        /* border:2px solid blue; */
-        border: none;
-        border-radius: 10px;
-        margin-bottom:30px;
-       }
-    
-    
     .services-second-popup .services-hidden-box-child .servcies-list .my-service-image{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
-        /* border: none; */
         border-radius: 10px;
         margin-bottom:30px;
     }
@@ -6339,18 +6504,11 @@ a span{
     .services-second-popup .services-hidden-box-child .servcies-list .my-service-image img{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
         border: none;
         border-radius: 10px;
         margin-bottom:30px;
     }
     
-    .servcies-list .services-heading{
-        width:100%;
-        height: 39px;
-        margin-top: 20px;
-        /* border: 2px solid blue; */
-    }
     
     .servcies-list .services-heading h3{
         font-size: 25px;
@@ -6360,14 +6518,10 @@ a span{
     
     .servcies-list .service-paragraph{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
     }
     
     .servcies-list .service-paragraph p{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
         margin-bottom: 20px;
         opacity: .8;
         font-size: 18px;
@@ -6381,6 +6535,152 @@ a span{
     
         /* my service 2nd box end */
 
+            /* Media query 1200px
+    ----------------------------- */
+    @media(max-width:1200px){
+        .services-second-popup{
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-second-popup .services-hidden-box-child{
+            width: 668px;
+            height: 711.5px;
+        }
+        
+        
+        .services-second-popup .services-hidden-box-child .servcies-list{
+            width:557px;
+            height: 600px;
+        }
+
+        
+        .services-second-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 428px;
+            border-radius: 10px;
+            margin-bottom:30px;
+        }
+        
+        
+        .services-second-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 428px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom:30px;
+        }
+        
+        
+        .servcies-list .services-heading h3{
+            font-size: 20px;
+            font-weight:700;
+            color: #130F49;
+            height: auto;
+        }
+        
+        .servcies-list .service-paragraph p{
+            margin-bottom: 20px;
+            opacity: .8;
+            font-size:16px;
+            line-height: 30px;
+            word-wrap: break-word;
+            color: #55527C;
+        }
+    }
+
+        /* Media query 800px
+    ----------------------------- */
+    @media(max-width:800px){
+        .services-second-popup{
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-second-popup .services-hidden-box-child{
+            width: 468px;
+            height: 711.5px;
+        }
+        
+        
+        .services-second-popup .services-hidden-box-child .servcies-list{
+            width:377px;
+            height: 620px;
+        }
+
+        
+        .services-second-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            margin-bottom:30px;
+        }
+        
+        
+        .services-second-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom:30px;
+        }
+
+        .services-second-popup .second-popup-close{
+            font-size: 30px;
+            font-weight: 900;
+            position:absolute;
+            top:5px;
+            right: 5px;
+            color: #130F49;
+            background-color: transparent;
+            border: 2px solid #fff;
+            z-index: 999;
+            padding: auto;
+            border-radius: none;
+            transition: all .1s linear;
+            font-family:fantasy;
+            border: none;
+           }
+        
+           .services-second-popup .second-popup-close:hover{
+             border-radius: 0;
+           }
+    }
+
+            /* Media query 600px
+    ----------------------------- */
+    @media(max-width:600px){
+        .services-second-popup{
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-second-popup .services-hidden-box-child{
+            width: 300px;
+            height: 711.5px;
+        }
+        
+        .services-second-popup .services-hidden-box-child .servcies-list{
+            width:239px;
+            height: 620px;
+        }
+
+        .services-second-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+            margin-bottom:30px;
+        }
+        
+        .services-second-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 120px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom:30px;
+        }
+
+    }
 
       /*  my service 3nd box start 
        --------------------------------*/
@@ -6392,7 +6692,7 @@ a span{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 20;
+        z-index: 100;
         transition: all o.5s linear;
         display:none;
     
@@ -6401,7 +6701,6 @@ a span{
     .services-third-popup .services-hidden-box-child{
         width: 968px;
         height: 711.5px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6409,13 +6708,13 @@ a span{
         background-color: #fff;
         font-family: 'Karla', sans-serif;
         border-radius: 4px;
+        z-index:100;
     }
     
     
     .services-third-popup .services-hidden-box-child .servcies-list{
         width:857px;
         height: 600px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6425,32 +6724,15 @@ a span{
         border-radius:4px;
     }
     
-    
-    .services-hidden-box-child .servcies-list::-webkit-scrollbar{
-        width: 5px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-track{
-        border-radius: 10px;
-        padding-left: 60px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-thumb{
-        border-radius: 10px;
-        background:#b8b1b1ab;
-       }
-    
        .services-third-popup .close-third-popup{
         font-size: 25px;
         font-weight: 800;
         position:absolute;
         top:0;
         right: -50px;
-        /* transform: translate(-14%,-21%); */
         color: #fff;
         background-color: transparent;
         border: 2px solid #fff;
-        /* display: block; */
         z-index: 30;
         padding-top: 2px;
         padding-bottom: 1px;
@@ -6464,22 +6746,9 @@ a span{
          border-radius: 50%;
        }
     
-       .hidden-development-small-section
-       .hidden-image  img{
-        width: 100%;
-        height: 428px;
-        /* border:2px solid blue; */
-        border: none;
-        border-radius: 10px;
-        margin-bottom:30px;
-       }
-    
-    
     .services-third-popup .services-hidden-box-child .servcies-list .my-service-image{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
-        /* border: none; */
         border-radius: 10px;
         margin-bottom:30px;
     }
@@ -6488,7 +6757,6 @@ a span{
     .services-third-popup .services-hidden-box-child .servcies-list .my-service-image img{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
         border: none;
         border-radius: 10px;
         margin-bottom:30px;
@@ -6498,7 +6766,6 @@ a span{
         width:100%;
         height: 39px;
         margin-top: 20px;
-        /* border: 2px solid blue; */
     }
     
     .servcies-list .services-heading h3{
@@ -6509,14 +6776,10 @@ a span{
     
     .servcies-list .service-paragraph{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
     }
     
     .servcies-list .service-paragraph p{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
         margin-bottom: 20px;
         opacity: .8;
         font-size: 18px;
@@ -6527,6 +6790,147 @@ a span{
     }
     
     
+
+
+    /* Media query 1200px
+    ----------------------------- */
+    @media(max-width:1200px) {
+        .services-third-popup {
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-third-popup .services-hidden-box-child{
+            width: 668px;
+            height: 711.5px;
+        }
+        
+        
+        .services-third-popup .services-hidden-box-child .servcies-list{
+            width:557px;
+            height: 600px;
+        }
+        
+        
+        .services-third-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 428px;
+        }
+        
+        
+        .services-third-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 428px;
+        }
+        
+        .servcies-list .services-heading{
+            width:100%;
+            height: 39px;
+            margin-top: 20px;
+        }
+        
+        .servcies-list .services-heading h3{
+            font-size: 20px;
+            font-weight:700;
+            color: #130F49;
+        }
+        
+        .servcies-list .service-paragraph p{
+            width: 100%;
+            margin-bottom: 20px;
+            opacity: .8;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+
+    }  
+
+
+    /* Media query 800px
+    ----------------------------- */
+    @media(max-width:800px) {
+        .services-third-popup {
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-third-popup .services-hidden-box-child{
+            width: 468px;
+            height: 711.5px;
+        }
+        
+        
+        .services-third-popup .services-hidden-box-child .servcies-list{
+            width:377px;
+            height: 620px;
+        }
+        
+        
+        .services-third-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 350px;
+        }
+        
+        
+        .services-third-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 350px;
+        }
+
+        .services-third-popup .close-third-popup{
+            font-size: 30px;
+            font-weight: 900;
+            position:absolute;
+            top:5px;
+            right: 5px;
+            color: #130F49;
+            background-color: transparent;
+            border: 2px solid #fff;
+            z-index: 999;
+            padding: auto;
+            border-radius: none;
+            transition: all .1s linear;
+            font-family:fantasy;
+            border: none;
+        }
+        
+
+    }  
+
+        /* Media query 600px
+    ----------------------------- */
+    @media(max-width:600px) {
+        .services-third-popup {
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-third-popup .services-hidden-box-child{
+            width: 300px;
+            height: 711.5px;
+        }
+        
+        
+        .services-third-popup .services-hidden-box-child .servcies-list{
+            width:239px;
+            height: 620px;
+        }
+        
+        
+        .services-third-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 120px;
+        }
+        
+        
+        .services-third-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 120px;
+        }
+
+
+    }  
        /*  my service 3nd box end
        --------------------------------*/
 
@@ -6540,7 +6944,7 @@ a span{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 20;
+        z-index: 100;
         transition: all o.5s linear;
         display:none;
     
@@ -6549,7 +6953,6 @@ a span{
     .services-fourth-popup .services-hidden-box-child{
         width: 968px;
         height: 711.5px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6557,13 +6960,13 @@ a span{
         background-color: #fff;
         font-family: 'Karla', sans-serif;
         border-radius: 4px;
+        z-index: 100;
     }
     
     
     .services-fourth-popup .services-hidden-box-child .servcies-list{
         width:857px;
         height: 600px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6574,31 +6977,15 @@ a span{
     }
     
     
-    .services-hidden-box-child .servcies-list::-webkit-scrollbar{
-        width: 5px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-track{
-        border-radius: 10px;
-        padding-left: 60px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-thumb{
-        border-radius: 10px;
-        background:#b8b1b1ab;
-       }
-    
        .services-fourth-popup .close-fourth-popup{
         font-size: 25px;
         font-weight: 800;
         position:absolute;
         top:0;
         right: -50px;
-        /* transform: translate(-14%,-21%); */
         color: #fff;
         background-color: transparent;
         border: 2px solid #fff;
-        /* display: block; */
         z-index: 30;
         padding-top: 2px;
         padding-bottom: 1px;
@@ -6612,22 +6999,10 @@ a span{
          border-radius: 50%;
        }
     
-       .hidden-development-small-section
-       .hidden-image  img{
-        width: 100%;
-        height: 428px;
-        /* border:2px solid blue; */
-        border: none;
-        border-radius: 10px;
-        margin-bottom:30px;
-       }
-    
     
     .services-fourth-popup .services-hidden-box-child .servcies-list .my-service-image{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
-        /* border: none; */
         border-radius: 10px;
         margin-bottom:30px;
     }
@@ -6636,7 +7011,6 @@ a span{
     .services-fourth-popup .services-hidden-box-child .servcies-list .my-service-image img{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
         border: none;
         border-radius: 10px;
         margin-bottom:30px;
@@ -6646,7 +7020,6 @@ a span{
         width:100%;
         height: 39px;
         margin-top: 20px;
-        /* border: 2px solid blue; */
     }
     
     .servcies-list .services-heading h3{
@@ -6657,14 +7030,10 @@ a span{
     
     .servcies-list .service-paragraph{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
     }
     
     .servcies-list .service-paragraph p{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
         margin-bottom: 20px;
         opacity: .8;
         font-size: 18px;
@@ -6675,6 +7044,132 @@ a span{
     }
     
     
+
+        /* Media query 1200px
+    ----------------------------- */
+    @media(max-width:1200px){
+        .services-fourth-popup {
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-fourth-popup .services-hidden-box-child{
+            width: 668px;
+            height: 711.5px;
+        }
+        
+        
+        .services-fourth-popup .services-hidden-box-child .servcies-list{
+            width:557px;
+            height: 600px;
+        }
+        
+
+        .services-fourth-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 428px;
+        }
+        
+        
+        .services-fourth-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 428px;
+        }
+
+        
+        .servcies-list .services-heading h3{
+            font-size: 20px;
+            font-weight:700;
+        }
+        
+        .servcies-list .service-paragraph p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+        /* Media query 800px
+    ----------------------------- */
+    @media(max-width:800px){
+        .services-fourth-popup {
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-fourth-popup .services-hidden-box-child{
+            width: 468px;
+            height: 711.5px;
+        }
+        
+        
+        .services-fourth-popup .services-hidden-box-child .servcies-list{
+            width:377px;
+            height: 620px;
+        }
+        
+
+        .services-fourth-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 350px;
+        }
+        
+        
+        .services-fourth-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 350px;
+        }
+        .services-fourth-popup .close-fourth-popup{
+            font-size: 30px;
+            font-weight: 900;
+            position:absolute;
+            top:5px;
+            right: 5px;
+            color: #130F49;
+            background-color: transparent;
+            border: 2px solid #fff;
+            z-index: 999;
+            padding: auto;
+            border-radius: none;
+            transition: all .1s linear;
+            border: none;
+           }
+        
+
+    }
+
+        /* Media query 600px
+    ----------------------------- */
+    @media(max-width:600px){
+        .services-fourth-popup {
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-fourth-popup .services-hidden-box-child{
+            width: 300px;
+            height: 711.5px;
+        }
+        
+        
+        .services-fourth-popup .services-hidden-box-child .servcies-list{
+            width:239px;
+            height: 620px;
+        }
+        
+
+        .services-fourth-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 120px;
+        }
+        
+        
+        .services-fourth-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 120px;
+        }
+
+    }
        /*  my service 4th box end
        --------------------------------*/
 
@@ -6689,7 +7184,7 @@ a span{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 20;
+        z-index: 100;
         transition: all o.5s linear;
         display:none;
     
@@ -6698,7 +7193,6 @@ a span{
     .services-fifth-popup .services-hidden-box-child{
         width: 968px;
         height: 711.5px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6706,13 +7200,13 @@ a span{
         background-color: #fff;
         font-family: 'Karla', sans-serif;
         border-radius: 4px;
+        z-index: 100;
     }
     
     
     .services-fifth-popup .services-hidden-box-child .servcies-list{
         width:857px;
         height: 600px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6723,19 +7217,6 @@ a span{
     }
     
     
-    .services-hidden-box-child .servcies-list::-webkit-scrollbar{
-        width: 5px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-track{
-        border-radius: 10px;
-        padding-left: 60px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-thumb{
-        border-radius: 10px;
-        background:#b8b1b1ab;
-       }
     
        .services-fifth-popup .fifth-popup-close{
         font-size: 25px;
@@ -6743,11 +7224,9 @@ a span{
         position:absolute;
         top:0;
         right: -50px;
-        /* transform: translate(-14%,-21%); */
         color: #fff;
         background-color: transparent;
         border: 2px solid #fff;
-        /* display: block; */
         z-index: 30;
         padding-top: 2px;
         padding-bottom: 1px;
@@ -6765,7 +7244,6 @@ a span{
        .hidden-image  img{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
         border: none;
         border-radius: 10px;
         margin-bottom:30px;
@@ -6775,8 +7253,6 @@ a span{
     .services-fifth-popup .services-hidden-box-child .servcies-list .my-service-image{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
-        /* border: none; */
         border-radius: 10px;
         margin-bottom:30px;
     }
@@ -6785,7 +7261,6 @@ a span{
     .services-fifth-popup .services-hidden-box-child .servcies-list .my-service-image img{
         width: 100%;
         height: 428px;
-        /* border:2px solid blue; */
         border: none;
         border-radius: 10px;
         margin-bottom:30px;
@@ -6795,7 +7270,6 @@ a span{
         width:100%;
         height: 39px;
         margin-top: 20px;
-        /* border: 2px solid blue; */
     }
     
     .servcies-list .services-heading h3{
@@ -6806,14 +7280,10 @@ a span{
     
     .servcies-list .service-paragraph{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
     }
     
     .servcies-list .service-paragraph p{
         width: 100%;
-        /* height: 86px; */
-        /* border: 2px solid blue; */
         margin-bottom: 20px;
         opacity: .8;
         font-size: 18px;
@@ -6824,6 +7294,130 @@ a span{
     }
     
     
+        /* Media query 1200px
+    ----------------------------- */
+    @media(max-width:1200px){
+        .services-fifth-popup{
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-fifth-popup .services-hidden-box-child{
+            width: 668px;
+            height: 711.5px;
+        }
+        
+        
+        .services-fifth-popup .services-hidden-box-child .servcies-list{
+            width:557px;
+            height: 600px;
+        }
+
+        .services-fifth-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 428px;
+        }
+        
+        
+        .services-fifth-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 428px;
+        }
+        
+        .servcies-list .services-heading h3{
+            font-size: 20px;
+            font-weight:700;
+            color: #130F49;
+        }
+
+        .servcies-list .service-paragraph p{
+            width: 100%;
+            margin-bottom: 20px;
+            opacity: .8;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+        /* Media query 800px
+    ----------------------------- */
+    @media(max-width:800px){
+        .services-fifth-popup{
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-fifth-popup .services-hidden-box-child{
+            width: 468px;
+            height: 711.5px;
+        }
+        
+        
+        .services-fifth-popup .services-hidden-box-child .servcies-list{
+            width:377px;
+            height: 620px;
+        }
+
+        .services-fifth-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 350px;
+        }
+        
+        
+        .services-fifth-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 350px;
+        }
+        
+        .services-fifth-popup .fifth-popup-close{
+            font-size: 30px;
+            font-weight: 900;
+            position:absolute;
+            top:5px;
+            right: 5px;
+            color: #130F49;
+            background-color: transparent;
+            border: 2px solid #fff;
+            z-index: 999;
+            padding: auto;
+            border-radius: none;
+            transition: all .1s linear;
+            border: none;
+           }
+    }
+
+
+        /* Media query 600px
+    ----------------------------- */
+    @media(max-width:600px){
+        .services-fifth-popup{
+            width: 100vw;
+            height:100vh;        
+        }
+        
+        .services-fifth-popup .services-hidden-box-child{
+            width: 300px;
+            height: 711.5px;
+        }
+        
+        
+        .services-fifth-popup .services-hidden-box-child .servcies-list{
+            width:239px;
+            height: 620px;
+        }
+
+        .services-fifth-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 120px;
+        }
+        
+        
+        .services-fifth-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 120px;
+        }
+    }
        /*  my service 5th box end
        --------------------------------*/
 
@@ -6839,7 +7433,7 @@ a span{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 20;
+        z-index: 100;
         transition: all o.5s linear;
         display:none;
     
@@ -6848,7 +7442,6 @@ a span{
     .services-six-popup .services-hidden-box-child{
         width: 968px;
         height: 711.5px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6856,13 +7449,13 @@ a span{
         background-color: #fff;
         font-family: 'Karla', sans-serif;
         border-radius: 4px;
+        z-index: 100;
     }
     
     
     .services-six-popup .services-hidden-box-child .servcies-list{
         width:857px;
         height: 600px;
-        /* border: 2px solid blue; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6871,22 +7464,7 @@ a span{
         overflow-x: hidden;
         border-radius:4px;
     }
-    
-    
-    .services-hidden-box-child .servcies-list::-webkit-scrollbar{
-        width: 5px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-track{
-        border-radius: 10px;
-        padding-left: 60px;
-       }
-    
-       .services-hidden-box-child .servcies-list::-webkit-scrollbar-thumb{
-        border-radius: 10px;
-        background:#b8b1b1ab;
-       }
-    
+        
        .services-six-popup .six-popup-close{
         font-size: 25px;
         font-weight: 800;
@@ -6908,17 +7486,7 @@ a span{
        .services-six-popup .six-popup-close:hover{
          border-radius: 50%;
        }
-    
-       .hidden-development-small-section
-       .hidden-image  img{
-        width: 100%;
-        height: 428px;
-        border: none;
-        border-radius: 10px;
-        margin-bottom:30px;
-       }
-    
-    
+
     .services-six-popup .services-hidden-box-child .servcies-list .my-service-image{
         width: 100%;
         height: 428px;
@@ -6961,7 +7529,137 @@ a span{
         word-wrap: break-word;
         color: #55527C;
     }
+
+        /* Media query 1200px
+    ----------------------------- */
+    @media(max-width:1200px){
+        .services-six-popup{
+            width: 100vw;
+            height:100vh;
+        }
+        
+        .services-six-popup .services-hidden-box-child{
+            width: 668px;
+            height: 711.5px;
+        }
+        
+        
+        .services-six-popup .services-hidden-box-child .servcies-list{
+            width:557px;
+            height: 600px;
+        }
+            
+        .services-six-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 428px;
+        }
+        
+        
+        .services-six-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 428px;
+        }
+
+        .servcies-list .services-heading h3{
+            font-size: 20px;
+            font-weight:700;
+        }
+        
+        .servcies-list .service-paragraph{
+            width: 100%;
+        }
+        
+        .servcies-list .service-paragraph p{
+            width: 100%;
+            margin-bottom: 20px;
+            opacity: .8;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
     
+
+            /* Media query 800px
+    ----------------------------- */
+    @media(max-width:800px){
+        .services-six-popup{
+            width: 100vw;
+            height:100vh;
+        }
+        
+        .services-six-popup .services-hidden-box-child{
+            width: 468px;
+            height: 711.5px;
+        }
+        
+        
+        .services-six-popup .services-hidden-box-child .servcies-list{
+            width:377px;
+            height: 620px;
+        }
+            
+        .services-six-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 350px;
+        }
+        
+        
+        .services-six-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 350px;
+        }
+
+        .services-six-popup .six-popup-close{
+            font-size: 30px;
+            font-weight: 900;
+            position:absolute;
+            top:5px;
+            right: 5px;
+            color: #130F49;
+            background-color: transparent;
+            border: 2px solid #fff;
+            z-index: 999;
+            padding: auto;
+            border-radius: none;
+            transition: all .1s linear;
+            border: none;
+           }
+    }
+    
+
+
+            /* Media query 600px
+    ----------------------------- */
+    @media(max-width:600px){
+        .services-six-popup{
+            width: 100vw;
+            height:100vh;
+        }
+        
+        .services-six-popup .services-hidden-box-child{
+            width: 300px;
+            height: 711.5px;
+        }
+        
+        
+        .services-six-popup .services-hidden-box-child .servcies-list{
+            width:239px;
+            height: 620px;
+        }
+            
+        .services-six-popup .services-hidden-box-child .servcies-list .my-service-image{
+            width: 100%;
+            height: 120px;
+        }
+        
+        
+        .services-six-popup .services-hidden-box-child .servcies-list .my-service-image img{
+            width: 100%;
+            height: 120px;
+        }
+
+    }
     
        /*  my service 6th box end
        --------------------------------*/
@@ -6984,10 +7682,8 @@ a span{
 .my-services-video-content {
     width: 1210px;
     height: 605px;
-    /* border: 2px solid blue; */
     position:relative;
     overflow: hidden;
-    /* border: 6px; */
 }
 
 
@@ -7005,8 +7701,6 @@ a span{
 .my-services-child-container
 .my-services-video-content 
 #btn  .video-tag-pic:hover{
-    /* -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5); */
     transform: scale(1.2);
 }
 
