@@ -13,37 +13,6 @@ close.addEventListener('click',()=>{
 })
 
 
-// Testimonial Section start
-
-
-document.getElementsByTagName('button')[0].addEventListener("click",function(){
-  document.getElementsByClassName("testimoinal-userinterface-section")[0].style.display="block";
-  document.getElementsByClassName("testimoinal-userinterface-section")[1].style.display="none";
-  document.getElementsByClassName("testimoinal-userinterface-section")[2].style.display="none";
-  document.getElementsByTagName("button")[0].classList.add("active");
-  document.getElementsByTagName("button")[1].classList.remove("active");
-  document.getElementsByTagName("button")[2].classList.remove("active");
-})
-
-
-document.getElementsByTagName('button')[1].addEventListener("click",function(){
-  document.getElementsByClassName("testimoinal-userinterface-section")[1].style.display="block";
-  document.getElementsByClassName("testimoinal-userinterface-section")[0].style.display="none";
-  document.getElementsByClassName("testimoinal-userinterface-section")[2].style.display="none";
-  document.getElementsByTagName("button")[1].classList.add("active");
-  document.getElementsByTagName("button")[0].classList.remove("active");
-  document.getElementsByTagName("button")[2].classList.remove("active");
-})
-
-document.getElementsByTagName('button')[2].addEventListener("click",function(){
-  document.getElementsByClassName("testimoinal-userinterface-section")[2].style.display="block";
-  document.getElementsByClassName("testimoinal-userinterface-section")[0].style.display="none";
-  document.getElementsByClassName("testimoinal-userinterface-section")[1].style.display="none";
-  document.getElementsByTagName("button")[2].classList.add("active");
-  document.getElementsByTagName("button")[0].classList.remove("active");
-  document.getElementsByTagName("button")[1].classList.remove("active");
-})
-
 
 
 
@@ -290,3 +259,40 @@ function showSlides(n) {
 //     Testimonial section end
 // =========================================
 
+
+// =========================================
+//     Recently Project work hide boxes
+// =========================================
+// box a
+// -----------
+
+document.querySelector('#project_a').addEventListener("click" , function(){
+  document.querySelector(".swiper-a").style.display = "block";
+})
+
+document.querySelector(".swiper_close_a").addEventListener("click" ,function(){
+  document.querySelector(".swiper-a").style.display = "none";
+})
+
+// box b
+// ----------
+document.querySelector('#project_b').addEventListener("click" , function(){
+  document.querySelector(".swiper-b").style.display = "block";
+})
+
+document.querySelector(".swiper_close_b").addEventListener("click" ,function(){
+  document.querySelector(".swiper-b").style.display = "none";
+})
+
+// box c
+// ----------
+document.querySelector('#project_c').addEventListener("click" , function(){
+  document.querySelector(".swiper-c").style.display = "block";
+})
+
+document.querySelector(".swiper_close_c").addEventListener("click" ,function(){
+  document.querySelector(".swiper-c").style.display = "none";
+})
+// =========================================
+//     Recently Project work hide boxes
+// =========================================

@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -623,21 +625,22 @@
                                     <h3>Recent completed works</h3>
                                 </div>
                                 <div class="works-heading-right">
-
+                                    <div class="swiper-button-next" id="slider_icon"></div>
+                                    <div class="swiper-button-prev" id="slider_icon"></div>
                                 </div>
                             </div>
-                            <div class="completed-works-boxes-parent">
-                                <div class="completed-works-boxes-child">
-                                    <div class="project-box">
+                            <div class="swiper card_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide project-box" id="project_a">
                                         <div class="project-image">
                                             <img src="./img/portfolio/1.jpg" alt="Projects image">
                                         </div>
                                         <div class="project-details">
-                                            <span><a href="#">Vimeo</a></span>
-                                            <h3><a href="#">Firogo Majestic Ltd.</a></h3>
+                                            <span><a href="#">Youtube</a></span>
+                                            <h3><a href="#">New Technology</a></h3>
                                         </div>
                                     </div>
-                                    <div class="project-box">
+                                    <div class="swiper-slide project-box" id="project_b">
                                         <div class="project-image">
                                             <img src="./img/portfolio/2.jpg" alt="Projects image">
                                         </div>
@@ -646,28 +649,55 @@
                                             <h3><a href="#">Firogo Majestic Ltd.</a></h3>
                                         </div>
                                     </div>
-                                    <div class="project-box">
+                                    <div class="swiper-slide project-box" id="project_c">
                                         <div class="project-image">
                                             <img src="./img/portfolio/3.jpg" alt="Projects image">
                                         </div>
                                         <div class="project-details">
-                                            <span><a href="#">Vimeo</a></span>
-                                            <h3><a href="#">Firogo Majestic Ltd.</a></h3>
+                                            <span><a href="#">Soundcloud</a></span>
+                                            <h3><a href="#">Creative Building</a></h3>
                                         </div>
                                     </div>
-                                    <div class="project-box">
+                                    <div class="swiper-slide project-box">
                                         <div class="project-image">
                                             <img src="./img/portfolio/4.jpg" alt="Projects image">
                                         </div>
                                         <div class="project-details">
-                                            <span><a href="#">Vimeo</a></span>
-                                            <h3><a href="#">Firogo Majestic Ltd.</a></h3>
+                                            <span><a href="#">Modalbox</a></span>
+                                            <h3><a href="#">Beautiful Boat</a></h3>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                             <div class="completed-works-bottom">
                                 <a href="#">View all projects</a>
+                            </div>
+                            <div class="swiper-a">
+                                <div class="swiper-video-a">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7e90gBu4pas?start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <div class="cross_icon">
+                                        <ion-icon class="swiper_close_a" name="close-outline"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-b">
+                                <div class="swiper-video-b">
+                                    <video controls autoplay>
+                                        <source src="https://previews.customer.envatousercontent.com/h264-video-previews/a18ff6f9-1f18-4c52-84b3-eb06153e6bae/23824322.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="cross_icon">
+                                        <ion-icon class="swiper_close_b" name="close-outline"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-c">
+                                <div class="swiper-video-c">
+                                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                    <div class="cross_icon">
+                                        <ion-icon class="swiper_close_c" name="close-outline"></ion-icon>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1087,5 +1117,40 @@
          ======================================== -->
 
          <script src="script.js"></script>
+
+           <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".card_slider", {
+      spaceBetween: 30,
+    //   loop:true,
+      speed:1000,
+      autoplay:{
+        delay:2000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        700: {
+          slidesPerView: 1,
+        },
+        700: {
+          slidesPerView: 2,
+        },
+        1050: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+
 </body>
 </html>
