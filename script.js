@@ -221,6 +221,10 @@ document.querySelector(".blog-close-g").addEventListener("click" ,function(){
   document.querySelector(".blog-hidden-g").style.display = "none";
 })
 
+// =========================================
+//     My blog section end
+// =========================================
+
 
 
 
@@ -292,6 +296,16 @@ document.querySelector('#project_c').addEventListener("click" , function(){
 
 document.querySelector(".swiper_close_c").addEventListener("click" ,function(){
   document.querySelector(".swiper-c").style.display = "none";
+})
+
+// box d
+// ----------
+document.querySelector('#project_d').addEventListener("click" , function(){
+  document.querySelector(".swiper-d").style.display = "block";
+})
+
+document.querySelector(".swiper_d").addEventListener("click" ,function(){
+  document.querySelector(".swiper-d").style.display = "none";
 })
 // =========================================
 //     Recently Project work hide boxes

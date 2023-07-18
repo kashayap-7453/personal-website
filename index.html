@@ -413,7 +413,7 @@
                                             <div class="my-service-image">
                                                 <img src="./img/service/1.jpg" alt="">
                                             </div>
-                                            <div class="services-heading">
+                                            <div class="services-heading" id="servcie_heading">
                                                 <h3>Web Design</h3>
                                             </div>
                                             <div class="service-paragraph">
@@ -447,7 +447,7 @@
                                             <div class="my-service-image">
                                                 <img src="./img/service/2.jpg" alt="">
                                             </div>
-                                            <div class="services-heading">
+                                            <div class="services-heading" id="heading-two">
                                                 <h3>UI/UX Design</h3>
                                             </div>
                                             <div class="service-paragraph">
@@ -481,7 +481,7 @@
                                             <div class="my-service-image">
                                                 <img src="./img/service/3.jpg" alt="">
                                             </div>
-                                            <div class="services-heading">
+                                            <div class="services-heading" id="heading_three">
                                                 <h3>Mobile Application</h3>
                                             </div>
                                             <div class="service-paragraph">
@@ -515,7 +515,7 @@
                                             <div class="my-service-image">
                                                 <img src="./img/service/4.jpg" alt="">
                                             </div>
-                                            <div class="services-heading">
+                                            <div class="services-heading" id="heading_four">
                                                 <h3>User Research</h3>
                                             </div>
                                             <div class="service-paragraph">
@@ -549,7 +549,7 @@
                                             <div class="my-service-image">
                                                 <img src="./img/service/5.jpg" alt="">
                                             </div>
-                                            <div class="services-heading">
+                                            <div class="services-heading" id="heading_five">
                                                 <h3>Animation</h3>
                                             </div>
                                             <div class="service-paragraph">
@@ -583,7 +583,7 @@
                                             <div class="my-service-image">
                                                 <img src="./img/service/6.jpg" alt="">
                                             </div>
-                                            <div class="services-heading">
+                                            <div class="services-heading" id="heading_six">
                                                 <h3>Game Development</h3>
                                             </div>
                                             <div class="service-paragraph">
@@ -608,8 +608,12 @@
                                     <p class="intro-tag">INTRO VIDEO</p>
                                 </div>
                                 <div class="hidden-video">
-                                    <span><ion-icon class="cross" name="close-outline"></ion-icon></span>
-                                    <iframe class="video"   src="https://www.youtube.com/embed/7e90gBu4pas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <div class="video_section">
+                                        <iframe class="video"   src="https://www.youtube.com/embed/7e90gBu4pas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <div class="close_video">
+                                            <span><ion-icon class="cross" name="close-outline"></ion-icon></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -625,8 +629,8 @@
                                     <h3>Recent completed works</h3>
                                 </div>
                                 <div class="works-heading-right">
-                                    <div class="swiper-button-next" id="slider_icon"></div>
-                                    <div class="swiper-button-prev" id="slider_icon"></div>
+                                    <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
                                 </div>
                             </div>
                             <div class="swiper card_slider">
@@ -658,7 +662,7 @@
                                             <h3><a href="#">Creative Building</a></h3>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide project-box">
+                                    <div class="swiper-slide project-box" id="project_d">
                                         <div class="project-image">
                                             <img src="./img/portfolio/4.jpg" alt="Projects image">
                                         </div>
@@ -696,6 +700,57 @@
                                     <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                                     <div class="cross_icon">
                                         <ion-icon class="swiper_close_c" name="close-outline"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-d" >
+                                <div class="swiper-child-box">
+                                    <button class="swiper_d" ><ion-icon name="close-outline"></ion-icon></button>
+                                    <div class="swiper-list">
+                                        <div class="swiper-image">
+                                            <img src="./img/portfolio/4.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-heading">
+                                            <span>Modalbox</span>
+                                            <h3>Beautiful Boat</h3>
+                                        </div>
+                                        <div class="swiper-paragraph">
+                                            <div class="swiper-small-p">
+                                                <p>We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance ease of modification. Building mockups strikes the ideal balance ease of modification.</p>
+                                                <p>Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they phase when they will represent the target product. Building mockups strikes the ideal balance ease of modification.</p>
+                                            </div>
+                                            <div class="swiper-details">
+                                                <ul>
+                                                    <li>
+                                                        <span class="first">Client</span>
+                                                        <span class="second">Alvaro Morata</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="first">Category</span>
+                                                        <span class="second">Modalbox</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="first">Date</span>
+                                                        <span class="second">April 10, 2023</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="first">Share</span>
+                                                        <ul class="icon-details">
+                                                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                                                            <li><i class="fa-brands fa-twitter"></i></li>
+                                                            <li><i class="fa-brands fa-instagram"></i></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="image-one">
+                                            <img src="./img/portfolio/5.jpg">
+                                        </div>
+                                        <div class="image-two">
+                                            <img src="./img/portfolio/6.jpg" alt="">
+                                            <img src="./img/portfolio/7.jpg" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1135,8 +1190,8 @@
         clickable: true,
       },
       navigation: {
-        nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
       },
       breakpoints: {
         700: {
