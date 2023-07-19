@@ -15,8 +15,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div class="main-web-container-all">
+<body onload="myFunction()">
+    <!-- Loading section  -->
+      <div class="drawing" id="loading">
+           <div class="loading-dot"></div>
+      </div>    
+    <!-- Loading section  -->
+    <div class="main-web-container-all" id="web-material">
         <div class="main-web-container">
             <div class="navbar-container ">
                 <div class="navbar-container-element">
@@ -1171,6 +1176,9 @@
                     JavaScrpt link 
          ======================================== -->
 
+
+
+
          <script src="script.js"></script>
 
            <!-- Swiper JS -->
@@ -1205,6 +1213,21 @@
         },
       },
     });
+
+
+
+    // Loadin section 
+var myVar;
+        
+function myFunction() {
+  myVar = setTimeout(showPage, 1950);
+}
+
+function showPage() {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("web-material").style.display = "block";
+}
+   // Loadin section 
   </script>
 
 </body>
