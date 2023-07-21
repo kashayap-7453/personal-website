@@ -1244,16 +1244,39 @@
       }
 
 
-const counters = document.querySelectorAll('.run');
+// const counters = document.querySelectorAll('.run');
+
+// counters.forEach((counter) => {
+
+//     const updateCounter = () => {
+//         const targetCount =  +counter.getAttribute('data-target');
+        
+//         const startingCount = Number(counter.innerHTML);
+
+//         const incr = targetCount / 100;
+
+//         if(startingCount < targetCount) {
+//             counter.innerHTML = `${Math.round(startingCount + incr)}`;
+//             setTimeout(updateCounter , 10)
+//         }else{
+//             counter.innerHTML = targetCount;
+//         }
+        
+//     }
+
+//     updateCounter();
+// });
+
+var counters = document.querySelectorAll('.run');
 
 counters.forEach((counter) => {
 
-    const updateCounter = () => {
-        const targetCount =  +counter.getAttribute('data-target');
+    var updateCounter = () => {
+        var targetCount =  +counter.getAttribute('data-target');
         
-        const startingCount = Number(counter.innerHTML);
+        var startingCount = Number(counter.innerHTML);
 
-        const incr = targetCount / 100;
+        var incr = targetCount / 100;
 
         if(startingCount < targetCount) {
             counter.innerHTML = `${Math.round(startingCount + incr)}`;
