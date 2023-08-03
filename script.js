@@ -310,3 +310,51 @@ document.querySelector(".swiper_d").addEventListener("click" ,function(){
 // =========================================
 //     Recently Project work hide boxes
 // =========================================
+
+
+
+
+
+// =========================================
+//          Loading section start
+// =========================================
+    var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 1800);
+      }
+      
+      function showPage() {
+        document.getElementById("center").style.display = "none";
+        document.getElementById("web-material").style.display = "block";
+      }
+
+
+const counters = document.querySelectorAll('.run');
+
+counters.forEach((counter) => {
+
+    const updateCounter = () => {
+        const targetCount =  +counter.getAttribute('data-target');
+        
+        const startingCount = Number(counter.innerHTML);
+
+        const incr = targetCount / 100;
+
+        if(startingCount < targetCount) {
+            counter.innerHTML = `${Math.round(startingCount + incr)}`;
+            setTimeout(updateCounter , 10)
+        }else{
+            counter.innerHTML = targetCount;
+        }
+        
+    }
+
+    updateCounter();
+});
+
+
+// =========================================
+//            Loading section end
+// =========================================
+

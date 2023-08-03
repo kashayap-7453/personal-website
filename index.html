@@ -73,6 +73,10 @@
                     </div>
                 </div>
             </div>
+
+            <!-- =============================================
+                    right main section start
+                ============================================== -->
             <div class="right-main-section-container">
                  <div class="right-main-section-container-child">
                     <div class="intro-part-image-container-parent">
@@ -106,6 +110,12 @@
                             </div>
                         </div>
                     </div>
+                    <!-- =============================================
+                                  right main section end
+                         ============================================== -->
+
+
+
                     <!-- =============================================
                                 Project happy clients section start
                      =================================================== -->
@@ -1192,7 +1202,7 @@
 
 
 
-         <script src="script.js"></script>
+   <script src="script.js"></script>
 
            <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -1227,72 +1237,6 @@
       },
     });
 
-
-
-    // Loadin section 
-    // -------------------------
-    var myVar;
-      
-      function myFunction() {
-        myVar = setTimeout(showPage, 1800);
-        // myVar = setTimeout(showPage, 1800);
-      }
-      
-      function showPage() {
-        document.getElementById("center").style.display = "none";
-        document.getElementById("web-material").style.display = "block";
-      }
-
-
-// const counters = document.querySelectorAll('.run');
-
-// counters.forEach((counter) => {
-
-//     const updateCounter = () => {
-//         const targetCount =  +counter.getAttribute('data-target');
-        
-//         const startingCount = Number(counter.innerHTML);
-
-//         const incr = targetCount / 100;
-
-//         if(startingCount < targetCount) {
-//             counter.innerHTML = `${Math.round(startingCount + incr)}`;
-//             setTimeout(updateCounter , 10)
-//         }else{
-//             counter.innerHTML = targetCount;
-//         }
-        
-//     }
-
-//     updateCounter();
-// });
-
-var counters = document.querySelectorAll('.run');
-
-counters.forEach((counter) => {
-
-    var updateCounter = () => {
-        var targetCount =  +counter.getAttribute('data-target');
-        
-        var startingCount = Number(counter.innerHTML);
-
-        var incr = targetCount / 100;
-
-        if(startingCount < targetCount) {
-            counter.innerHTML = `${Math.round(startingCount + incr)}`;
-            setTimeout(updateCounter , 10)
-        }else{
-            counter.innerHTML = targetCount;
-        }
-        
-    }
-
-    updateCounter();
-});
-
-  
-     // Loadin section 
-    // -------------------------
   </script>
 </body>
 </html>

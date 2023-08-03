@@ -330,7 +330,6 @@ html{
 .intro-part-image-paragraph
 .intro-contact{
     margin-top:150px;
-    /* border:2px solid blue; */
     list-style-type: none;
     font-size: 16px;
     padding:10px;
@@ -339,11 +338,11 @@ html{
 .intro-part-image-paragraph
 .intro-contact
 a{
-    font-size: 16px;
+    font-size: 18px;
     text-decoration:none;
     line-height: 30px;
     color:#130f49;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
     cursor:pointer;
@@ -11098,10 +11097,6 @@ Testimonial container section
   /* My bolg popup section
   -------------------------- */
 
-  /* .my-blogs-clild .my-blogs-list #blog-box-a{
-     background-color: #b8b1b1ab;
-  } */
-
   /* Meida query 1600px
   ---------------------
   my blogs section 
@@ -13280,9 +13275,8 @@ Testimonial container section
   }
   
   .contact-section  .contact-section-material .text textarea{
-    width: 92%;
-    height: 75px;
-    /* border: 2px solid blue; */
+    width: 96%;
+    height: 120px;
     resize: none;
     font-size: 18px;
     border: 1px solid #eee;
@@ -13590,8 +13584,8 @@ contact section
       }
       
       .contact-section  .contact-section-material .text textarea{
-        width: 95%;
-        height: 75px;
+        width: 97%;
+        height: 120px;
         resize: none;
         font-size: 18px;
         border: 1px solid #eee;
@@ -13665,8 +13659,8 @@ contact section
      }
 
       .contact-section  .contact-section-material .text textarea{
-        width: 84%;
-        height: 75px;
+        width: 90%;
+        height: 120px;
         resize: none;
         font-size: 16px;
         padding:20px;
