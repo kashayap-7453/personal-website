@@ -11,9 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+
    <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body onload="myFunction()">
     <!-- Loading section  -->
@@ -40,7 +44,10 @@
                 <div class="navbar-container-element">
                     <div class="navbar-image">
                         <img src="https://marketifythemes.net/html/elisc/img/about/1.jpg" alt="Image">
-                        <p>Neeraj kumar</p>
+                        <div class="my-name">
+                            Neeraj kumar
+                            <div class="nic-name">Neeraj kumar</div>
+                        </div>
                     </div>
                     <div class="navbar-content">
                         <ul>
@@ -58,7 +65,7 @@
                             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         </ul>
-                        <p>copyright &copy; 2023 <span>Neeraj.All right reserved</span></p>
+                        <p>copyright &copy; 2023 <span id="reserved-advice">Neeraj.All right reserved</span></p>
                     </div>
                 </div>
                 <div class="nav-button-parent">
@@ -1209,7 +1216,7 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".card_slider", {
+    let swiper = new Swiper(".card_slider", {
       spaceBetween: 30,
     //   loop:true,
       speed:1000,

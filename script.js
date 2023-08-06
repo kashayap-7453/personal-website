@@ -318,7 +318,7 @@ document.querySelector(".swiper_d").addEventListener("click" ,function(){
 // =========================================
 //          Loading section start
 // =========================================
-    var myVar;
+    let myVar;
       
       function myFunction() {
         myVar = setTimeout(showPage, 1800);
