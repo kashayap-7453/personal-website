@@ -7,13 +7,13 @@
 html{
     scroll-behavior: smooth;
 }
+
 /* ============================
        Navbaar section start 
 =============================== */
 .main-web-container-all {
     width: 100%;    
     display: none;
-    /* transition: all .2s linear; */
     animation: open .1s linear;
 }
 
@@ -27,7 +27,7 @@ html{
 
 ::-webkit-scrollbar-thumb{
     border-radius: 10px;
-    background: grey;
+    background: #A5A6FF;
 }
 
 @keyframes open{
@@ -200,7 +200,7 @@ html{
     justify-content: space-between;
     align-items: center;
 }
-.nav-button-parent .nav-button .nav-image {
+.nav-button-parent .nav-button .nav-image{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,12 +210,13 @@ html{
 
  .click-button{
     width: 70px;
-    height:100% ;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;   
     font-size:35px; 
     color:#130F49;
+    padding-top: 5px;
 }
 
 .click-button .mobile-nav-icon[name="close-outline"]{
@@ -224,9 +225,10 @@ html{
 }
 
 
-.nav-button-parent .nav-button .nav-image img{
-     width: auto;
-     height: 20px;
+.nav-button-parent .nav-button .nav-image .nav_h{
+    font-size:35px;
+    font-weight: 900;
+    color: #A5A6FF;
 }
 
 /* =================================================
@@ -349,6 +351,12 @@ html{
     background-color: #130F49;
     border-radius:4px;
     margin-right:10px;
+    transition: all .3s linear;
+}
+
+.intro-part-image-paragraph .contact-button .project-btn:hover{
+    background-color:transparent;
+    color:#55527c;
 }
 
 .intro-part-image-paragraph .contact-button 
@@ -360,12 +368,10 @@ html{
     text-decoration:none;
     color:#55527C;
     border-radius:4px;
+    transition: all .3s linear;
 }
 
-.intro-part-image-paragraph .contact-button .project-btn:hover{
-    background-color:transparent;
-    color:#55527c;
-}
+
 
 .intro-part-image-paragraph
 .contact-button .talk-btn:hover{
@@ -424,31 +430,29 @@ a:hover{
 
     .intro-part-image-container .intro-part-image-child-container
     .intro-part-image-paragraph img{
-    /* padding: 0; */
     object-fit: cover;
     width: 440px;
     height: 500px;
     
    }
                   
-.intro-part-image-paragraph
-.intro-contact{
+.intro-part-image-paragraph .intro-contact{
     margin-top: 90px;
     list-style-type: none;
     font-size: 16px;
     padding:10px;
 }
 
-   .intro-part-image-container .intro-part-image-child-container
-   .intro-part-image-paragraph{
-       width:50%;
-       height:552px;
-       overflow: hidden;
-   }
-   .navbar-image{
-    padding-top:30px;
+.intro-part-image-container .intro-part-image-child-container
+.intro-part-image-paragraph{
+    width:50%;
+    height:552px;
+    overflow: hidden;
 }
 
+.navbar-image{
+    padding-top:30px;
+}
 
 .my-name{
     font-size: 25px;
@@ -591,7 +595,7 @@ a:hover{
 @media(max-width:1050px){
 
     .navbar-container .navbar-container-element{
-        width: 20%;
+        width: 200px;
         height: 100vh;
         overflow: hidden;
         background-color: #fff;
@@ -706,11 +710,15 @@ a:hover{
         padding-left: 0;
         border-radius:0;
     }
+
+    .navbar-icon ul li{
+        margin-right:10px;
+    }
     
     .navbar-icon p{
         font-size:16px;
         font-weight: 400;
-        width:60%;
+        width:100%;
         font-family: 'Karla', sans-serif;
         text-align: start;
         opacity: .7;
@@ -825,7 +833,7 @@ a:hover{
         width:100%;
         height: 1250px;
         background-color: #effbf8;
-        margin-top: 12%;
+        margin-top: 8%;
     }
 
     .right-main-section-container .right-main-section-container-child .intro-part-image-container
@@ -888,9 +896,6 @@ a:hover{
 
 @media(max-width:500px){
 
-    .navbar-container .navbar-container-element{
-        width: 40%;
-    }
     .right-main-section-container .right-main-section-container-child
     .intro-part-image-container-parent{
         width:100%;
@@ -926,7 +931,6 @@ a:hover{
    .intro-part-image-paragraph{
        width:100%;
        height:600px;
-       /* border:2px solid blue; */
        overflow: hidden;
    }
 
@@ -962,6 +966,7 @@ a:hover{
         padding: 10px 30px;
         font-size: 16px;
      }  
+
 }
 
 
@@ -1103,6 +1108,7 @@ a:hover{
     background-color: #130F49;
     border-radius:4px;
     margin-right:10px;
+    transition:all .3s linear;
     
 }
 
@@ -1988,7 +1994,7 @@ Project happy client section
     .project-happy-clients-parent-container
     .project-happy-clients-child-container
     .project-happy-clients{
-        width: 95% ;
+        width: 90% ;
         height: 1400px;
     }
     
@@ -2033,7 +2039,7 @@ Project happy client section
     .project-happy-clients-parent-container
     .project-happy-clients-child-container
     .project-happy-clients{
-        width: 95% ;
+        width: 90% ;
         height: 1500px;
     }
     
@@ -2254,6 +2260,27 @@ p{
 }
 
 
+.everthing-about-me-child-conatiner .resume-button{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 40px;
+    border:1.5px solid #130f49;
+    text-decoration:none;
+    color:#fff;
+    background-color: #130F49;
+    border-radius:4px;
+    margin-right:10px;
+    transition: all .3s linear;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.everthing-about-me-child-conatiner .resume-button:hover{
+    background-color:transparent;
+    color:#55527c;
+}
+
+
 /*   Media query 1600
     ----------------------------
     Everything about me section
@@ -2263,7 +2290,7 @@ p{
 .everthing-about-me-conatiner
 .everthing-about-me-child-conatiner{
     width:100%;
-    height: 860px;
+    height: 900px;
 }
 
 .everthing-about-me-child-conatiner
@@ -3604,7 +3631,6 @@ Everything about me section
 .my-services-container{
     width: 100%;
     height: 1553px;
-    /* border:2px solid blue; */
     font-family: 'Karla', sans-serif;
     background-color: #fff;
 }
@@ -3627,7 +3653,6 @@ Everything about me section
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid blue; */
     margin-top:100px;
     margin-bottom: 40px;
 }
@@ -3637,7 +3662,6 @@ Everything about me section
 .my-services-heading-email-b {
     width: 243.59;
     height: 96px;
-    /* border: 2px solid blue; */
     text-decoration:none;
 }
 
@@ -3706,6 +3730,7 @@ Everything about me section
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .my-services-child-container
@@ -3786,6 +3811,7 @@ a span{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .my-services-child-container
 .my-services-six-boxes
@@ -3800,7 +3826,6 @@ a span{
 .box-my-services{
      width: 301.33px;
      height: 207px;
-     /* border: 1px solid red; */
 }
 
 .box-my-services .heading-span p{
@@ -3829,7 +3854,6 @@ a span{
 .box-my-services .anchor-arrow{
      width: 100%;
      height: 50px;
-     /* border: 2px solid blue; */
      padding-top: 20px;
 }
 
@@ -3865,6 +3889,7 @@ a span{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .my-services-child-container
 .my-services-six-boxes
@@ -3879,7 +3904,6 @@ a span{
 .box-my-services{
      width: 301.33px;
      height: 207px;
-     /* border: 1px solid red; */
 }
 
 .box-my-services .heading-span p{
@@ -3908,7 +3932,6 @@ a span{
 .box-my-services .anchor-arrow{
      width: 100%;
      height: 50px;
-     /* border: 2px solid blue; */
      padding-top: 20px;
 }
 
@@ -3945,7 +3968,9 @@ a span{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
+
 .my-services-child-container
 .my-services-six-boxes
 .box-d-parent:hover{
@@ -3959,7 +3984,6 @@ a span{
 .box-my-services{
      width: 301.33px;
      height: 207px;
-     /* border: 1px solid red; */
 }
 
 .box-my-services .heading-span p{
@@ -3988,7 +4012,6 @@ a span{
 .box-my-services .anchor-arrow{
      width: 100%;
      height: 50px;
-     /* border: 2px solid blue; */
      padding-top: 20px;
 }
 
@@ -4024,6 +4047,7 @@ a span{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .my-services-child-container
 .my-services-six-boxes
@@ -4038,7 +4062,6 @@ a span{
 .box-my-services{
      width: 301.33px;
      height: 207px;
-     /* border: 1px solid red; */
 }
 
 .box-my-services .heading-span p{
@@ -4067,7 +4090,6 @@ a span{
 .box-my-services .anchor-arrow{
      width: 100%;
      height: 50px;
-     /* border: 2px solid blue; */
      padding-top: 20px;
 }
 
@@ -4102,14 +4124,15 @@ a span{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
+
 .my-services-child-container
 .my-services-six-boxes
 .box-f-parent:hover{
     margin-bottom:15px;
     transition: all .3s linear;
 }
-
 
 .my-services-child-container
 .my-services-six-boxes .box-f-parent
@@ -4144,7 +4167,6 @@ a span{
 .box-my-services .anchor-arrow{
      width: 100%;
      height: 50px;
-     /* border: 2px solid blue; */
      padding-top: 20px;
 }
 
@@ -8169,6 +8191,7 @@ a span{
     height: 605px;
     position:relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 
@@ -8572,6 +8595,7 @@ Video hidden content section responsive
     display: block;
     color: #130F49;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .completed-works-heading .works-heading-right .swiper-button-next .fa-solid:hover{
@@ -8624,6 +8648,7 @@ Video hidden content section responsive
   .swiper-wrapper .project-box{
     width:383.33px;
     height:548.14px;
+    cursor:pointer;
   }
 
   .swiper-wrapper .project-box .project-image{
@@ -8689,6 +8714,7 @@ Video hidden content section responsive
     margin-top:40px;
     border-radius: 4px;
     border: 1.5px solid #130f49;
+    transition: all .3s linear;
   }
 
   .completed-works-child .completed-works-bottom a:hover{
@@ -9957,21 +9983,25 @@ Video hidden content section responsive
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .customer-and-class-child .customer-boxes .customer-small-boxe-a, .customer-small-boxe-b,
 .customer-small-boxe-c{
     border-right: 2px solid #e7e7e7;
     border-bottom: 2px solid #e7e7e7;
+    cursor: pointer;
 }
 
 .customer-and-class-child .customer-boxes .customer-small-boxe-d{
     border-bottom: 2px solid #e7e7e7;
+    cursor: pointer;
 }
 
 .customer-and-class-child .customer-boxes .customer-small-boxe-e, 
 .customer-small-boxe-f, .customer-small-boxe-g{
     border-right: 2px solid #e7e7e7;
+    cursor: pointer;
 }
 
 
@@ -10886,7 +10916,6 @@ Testimonial container section
         word-wrap: break-word;
         text-align: center;
         padding: 0 15px;
-        opacity: .8;
     }
     
     .testimoinal-userinterface-section .image-heading{
@@ -10982,8 +11011,8 @@ Testimonial container section
     .testimoinal-userinterface-section .testimonial-paragraph{
         width: 100%;
         height: auto;
-        margin-top: 25px;
-        margin-bottom:30px;
+        margin-top: 20px;
+        margin-bottom:35px;
         
     }
     .testimonials-buttons{
@@ -10999,6 +11028,20 @@ Testimonial container section
         width:100%;
         height: 456px;
     }
+
+    .testimoinal-userinterface-section .image-heading h3{
+        font-size: 23px;
+        font-weight:600;
+        color:#130F49;
+    }
+    .testimonial-heading-image-parent  .testimonial-heading h3{
+        font-size:30px;
+        font-weight: 800;
+        color:#130F49;
+        word-wrap: break-word;
+    }
+
+    
     
 }
  /*==================================
@@ -11095,11 +11138,12 @@ Testimonial container section
    .my-blogs-list .blog-parent{
     width: 100%;
     height: 116px;
-    transition: all .3s linear;
+    transition: all .1s linear;
+    cursor: pointer;
   }
 
   .my-blogs-list .blog-parent:hover{
-    background-color: rgba(229,229,229,255);
+    background-color:rgb(237, 242, 244);
     border-bottom-right-radius: 10px;
   }
 
@@ -13304,11 +13348,12 @@ Testimonial container section
  
 
  .contact-details .contact-details-personal {
-    width: 100%;
+    width: 50%;
     height: 112px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
  }
 
  .contact-details .contact-details-personal a{
@@ -13319,6 +13364,26 @@ Testimonial container section
     text-decoration: none;
     word-wrap: break-word;
     letter-spacing: 0;
+    position: relative;
+    display: inline-block;
+ }
+
+ .contact-details .contact-details-personal a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scale(0);
+    height:2px;
+    transform-origin: bottom right;
+    background-color:  #130F49;
+    transition: transform 0.25s ease-out;
+ }
+
+ .contact-details .contact-details-personal a:hover:after{
+    transform: scale(1);
+    transform-origin: bottom left;
  }
 
 
@@ -13338,6 +13403,7 @@ Testimonial container section
     border: 1px solid #eee;
     padding-left:20px;
   }
+
 
   .contact-section  .contact-section-material .text {
     width: 100%;
@@ -13732,7 +13798,7 @@ contact section
      }
 
       .contact-section  .contact-section-material .text textarea{
-        width: 90%;
+        width:97%;
         height: 120px;
         resize: none;
         font-size: 16px;
@@ -13740,7 +13806,7 @@ contact section
       }
 
       .contact-section-detais .contact-section .contact-section-material .equal input{
-        width: 90%;
+        width:97%;
         height: 60px;
         font-size: 16px;
         background-color: #fff;
