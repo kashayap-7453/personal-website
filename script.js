@@ -270,13 +270,13 @@ function showSlides(n) {
 // box a
 // -----------
 
-document.querySelector('#project_a').addEventListener("click" , function(){
-  document.querySelector(".swiper-a").style.display = "block";
-})
+// document.querySelector('#project_a').addEventListener("click" , function(){
+//   document.querySelector(".swiper-a").style.display = "block";
+// })
 
-document.querySelector(".swiper_close_a").addEventListener("click" ,function(){
-  document.querySelector(".swiper-a").style.display = "none";
-})
+// document.querySelector(".swiper_close_a").addEventListener("click" ,function(){
+//   document.querySelector(".swiper-a").style.display = "none";
+// })
 
 // box b
 // ----------

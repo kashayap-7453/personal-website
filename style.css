@@ -9330,7 +9330,7 @@ Video hidden content section responsive
   -------------------------- */
   /* box a
   --------------- */
-  .swiper-a{
+  /* .swiper-a{
     position:fixed;
     top: 0;
     left: 0;
@@ -9386,6 +9386,24 @@ Video hidden content section responsive
         height: 150px;
        }
     
+} */
+
+/* box-a
+----------------
+template clickable 
+========================== */
+#project_a{
+    position: relative;
+}
+
+#project_a .template_new{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all .3s linear;
 }
 
    /* box b
