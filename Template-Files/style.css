@@ -22,7 +22,6 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    /* background-color:#e7f5ff; */
     background-color: #fff;
     box-shadow: 11px 15px 29px 0 rgb(48 48 48 / 7%);
     position:fixed;
@@ -63,7 +62,6 @@ body{
 }
 
 .mobile-navbar-btn{
-    /* display:none; */
     background:transparent;
     cursor:pointer;
 }
@@ -195,6 +193,7 @@ body{
     border:1px solid #dddddd;
     border-radius:10px;
     margin-top:6px;
+    padding-left: 10px;
 }
 
 .multiple-contact-section .form-section button{

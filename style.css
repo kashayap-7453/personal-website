@@ -164,12 +164,12 @@ html{
 }
 
 
-.navbar-icon ul .fa-brands , .fab{
+.navbar-icon ul .fa-brands , .fab , .fa-solid{
     color:#130F49;
-    background-color:rgb(236, 241, 243);
+    background-color: rgba(19,15,73,.05);
     font-size:20px;
     border:none;
-    padding:5px;
+    padding:6px;
     margin:10px;
     border-radius: 50%;
 }
@@ -700,7 +700,7 @@ a:hover{
     }
     
     
-    .navbar-icon ul .fa-brands , .fab{
+    .navbar-icon ul .fa-brands , .fab , .fa-solid{
         color:black;
         background-color:transparent;
         font-size:15px;
@@ -2122,7 +2122,7 @@ Project happy client section
 .everthing-about-me-conatiner
 .everthing-about-me-child-conatiner{
     width:100%;
-    height: 918px;
+    height: 800px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -2156,43 +2156,98 @@ h5{
 
 .everthing-about-me-child-conatiner
 .everthing-about-me-child-conatiner-four-boxes{
-    width:1240px;
-    height: 610px;
+    width:1210px;
+    height: 400px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .everthing-about-me-child-conatiner
 .everthing-about-me-child-conatiner-four-boxes
 .everthing-about-me-boxes{
-    width: 590px;
+    width: 45%;
     height: 266px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     font-family: 'Karla', sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition:0.2s linear;
 }
 
-
-.everthing-about-me-boxes a{
-    width: 590px;
+.one-comapany{
+    width: 48%;
     height: 266px;
-    position: absolute;
+    background-color: #fff;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.everthing-about-me-boxes:hover{
-    margin-bottom: 15px;
+.one-comapany .company-material{
+    width: 85%;
+    height: 160px;
 }
+
+.one-comapany .company-material .company-paragraph{
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.one-comapany .company-material .company-paragraph .main_heading h6{
+    font-size: 20px;
+    font-weight: 600;
+    color: #51586a;
+    text-align: center;
+}
+
+
+.one-comapany .company-material .company-paragraph #c-button{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    background: transparent;
+    color: #A5A6FF;
+    text-decoration: none;
+}
+
+.one-comapany .company-material .com-image{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.one-comapany .company-material .com-image .c-content p{
+    font-size: 18px;
+    line-height: 32px;
+    word-wrap: break-word;
+    font-weight: 400;
+    color: #55527C;
+    /* width: 100%; */
+}
+
+
+/* .one-comapany .company-material .com-image .c-logo{
+    width: 30%;
+} */
+
 
 .everthing-about-me-boxes
 .everthing-about-me-box-list{
-    width: 448px;
-    height: 158px;
+    width: 85%;
+    height: 160px;
 }
 
 .everthing-about-me-box-list
@@ -2224,15 +2279,17 @@ h5{
 .box-list-heading
 .job h6{
     font-size: 20px;
-    color: #130F49;;
     font-weight: 700;
 }
 
 .box-list-heading
 .city h6{
-    font-size: 18px;
-    font-weight: 400;
-    color:#55527C;
+    font-size: 20px;
+    font-weight: 900;
+    color: #51586a;
+    padding:10px 10px;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .everthing-about-me-box-list
@@ -2247,6 +2304,7 @@ h5{
 p{
     width: 100%;
     height: 90px;
+    padding-top: 10px;
 }
 
 .everthing-about-me-box-list
@@ -2260,7 +2318,23 @@ p{
 }
 
 
-.everthing-about-me-child-conatiner .resume-button{
+/* .everthing-about-me-child-conatiner .resume-button{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 40px;
+    border:1.5px solid #130f49;
+    text-decoration:none;
+    color:#fff;
+    background-color: #130F49;
+    border-radius:4px;
+    margin-right:10px;
+    transition: all .3s linear;
+    margin-top: 40px;
+    cursor: pointer;
+} */
+
+.everthing-about-me-child-conatiner .resume-button a{
+    text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     padding: 12px 40px;
@@ -2275,7 +2349,7 @@ p{
     cursor: pointer;
 }
 
-.everthing-about-me-child-conatiner .resume-button:hover{
+.everthing-about-me-child-conatiner .resume-button a:hover{
     background-color:transparent;
     color:#55527c;
 }
@@ -2290,7 +2364,7 @@ p{
 .everthing-about-me-conatiner
 .everthing-about-me-child-conatiner{
     width:100%;
-    height: 900px;
+    height: 800px;
 }
 
 .everthing-about-me-child-conatiner
@@ -2319,34 +2393,20 @@ h5{
 .everthing-about-me-child-conatiner
 .everthing-about-me-child-conatiner-four-boxes{
     width:960px;
-    height: 610px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .everthing-about-me-child-conatiner
 .everthing-about-me-child-conatiner-four-boxes
 .everthing-about-me-boxes{
-    width: 465px;
     height: 246px;
-}
-
-
-.everthing-about-me-boxes a{
-    width: 465px;
-    height: 246px;
-    position: absolute;
-}
-
-.everthing-about-me-boxes:hover{
-    margin-bottom: 15px;
 }
 
 .everthing-about-me-boxes
 .everthing-about-me-box-list{
-    width: 383px;
     height: 158px;
 }
 
@@ -2412,6 +2472,72 @@ p{
     word-wrap: break-word;
     font-weight: 400;
     color: #55527C;
+}
+
+/* box b  */
+
+.one-comapany{
+    width: 48%;
+    height: 246px;
+    background-color: #fff;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.one-comapany .company-material{
+    width: 85%;
+    height: 158px;
+}
+
+.one-comapany .company-material .company-paragraph{
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.one-comapany .company-material .company-paragraph .main_heading h6{
+    font-size: 17px;
+    font-weight: 600;
+    color: #51586a;
+    text-align: center;
+}
+
+
+.one-comapany .company-material .company-paragraph #c-button{
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    background: transparent;
+    color: #A5A6FF;
+    text-decoration: none;
+}
+
+.one-comapany .company-material .com-image{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.one-comapany .company-material .com-image .c-content p{
+    font-size: 16px;
+    line-height: 32px;
+    word-wrap: break-word;
+    font-weight: 400;
+    color: #55527C;
+    width: 90%;
+}
+
+
+.one-comapany .company-material .com-image .c-logo{
+    width: 30%;
 }
 
 }
@@ -2829,7 +2955,7 @@ p{
         .everthing-about-me-conatiner
         .everthing-about-me-child-conatiner{
             width:100%;
-            height: 1450px;    
+            height: 1480px;    
         }
 
         .everthing-about-me-child-conatiner
@@ -2886,7 +3012,7 @@ p{
    ==================================== */
 
 /* .hidden-development-container */
-#popup{
+/* #popup{
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -3032,13 +3158,13 @@ p{
 
    #popup a.close-popup:hover{ 
      border-radius: 50%;
-   } 
+   }  */
 
 /* Media query  1200px
 ---------------------------------
 Everything about me section
 ---------------------------------- */
-@media(max-width:1200px){
+/* @media(max-width:1200px){
    #popup
    #popup-conten{
     width: 668px;
@@ -3094,13 +3220,13 @@ Everything about me section
     line-height: 30px;
    }
  
-}
+} */
 
 /* Media query  800px
 ---------------------------------
 Everything about me section
 ---------------------------------- */
-@media(max-width:800px){
+/* @media(max-width:800px){
     #popup{
     width: 100vw;
     height: 100vh;
@@ -3158,13 +3284,13 @@ Everything about me section
     border: none;
    } 
 
-}
+} */
 
 /* Media query  600px
 ---------------------------------
 Everything about me section
 ---------------------------------- */
-@media(max-width:600px){
+/* @media(max-width:600px){
     #popup{
     width: 100vw;
     height: 100vh;
@@ -3194,7 +3320,7 @@ Everything about me section
    }
 
 
-}
+} */
 
 
 
@@ -3204,7 +3330,7 @@ Everything about me section
 
    /*          Hidden content  A
    ==================================== */
-
+/* 
 #popup-a{
     width: 100vw;
     height: 100vh;
@@ -3224,7 +3350,6 @@ Everything about me section
    #popup-conten{
     width: 968px;
     height: 711.5px;
-    /* border:2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3257,12 +3382,12 @@ Everything about me section
 
    #popup-a a.close-popup:hover{
     border-radius:50%;
-   }
+   } */
 
 
    /* Media query  1200px
    --------------------------------- */
-   @media(max-width:1200px){
+   /* @media(max-width:1200px){
        #popup-a{
         width: 100vw;
         height: 100vh;
@@ -3280,11 +3405,11 @@ Everything about me section
         height: 428px;
        }
 
-   }
+   } */
 
       /* Media query  800px
    --------------------------------- */
-   @media(max-width:800px){
+   /* @media(max-width:800px){
     #popup-a{
         width: 100vw;
         height: 100vh;
@@ -3315,11 +3440,11 @@ Everything about me section
         height: 350px;
        }
 
-   }
+   } */
 
          /* Media query  600px
    --------------------------------- */
-   @media(max-width:600px){
+   /* @media(max-width:600px){
     #popup-a{
         width: 100vw;
         height: 100vh;
@@ -3335,7 +3460,7 @@ Everything about me section
         height: 120px;
        }
 
-   }
+   } */
 
 
            /* Hidden content end 
@@ -3346,7 +3471,7 @@ Everything about me section
    ==================================== */
 
 /* .hidden-development-container */
-#popup-b{
+/* #popup-b{
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -3365,7 +3490,6 @@ Everything about me section
    #popup-conten{
     width: 968px;
     height: 711.5px;
-    /* border:2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3398,12 +3522,12 @@ Everything about me section
    } 
    #popup-b a.close-popup:hover{
     border-radius:50%;
-   }
+   } */
 
 
       /* Media query  1200px
    --------------------------------- */
-   @media(max-width:1200px){
+   /* @media(max-width:1200px){
     #popup-b{
         width: 100vw;
         height: 100vh;
@@ -3420,11 +3544,11 @@ Everything about me section
         height: 428px;
        }
  
-   }
+   } */
 
          /* Media query  800px
    --------------------------------- */
-   @media(max-width:800px){
+   /* @media(max-width:800px){
     #popup-b{
         width: 100vw;
         height: 100vh;
@@ -3456,11 +3580,11 @@ Everything about me section
         transition: all .1s linear;
         border: none;
        } 
-   }
+   } */
 
             /* Media query  600px
    --------------------------------- */
-   @media(max-width:600px){
+   /* @media(max-width:600px){
     #popup-b{
         width: 100vw;
         height: 100vh;
@@ -3476,7 +3600,7 @@ Everything about me section
         width: 100%;
         height: 120px;
        }
-   }
+   } */
 
 
            /* Hidden content end 
@@ -3487,7 +3611,7 @@ Everything about me section
    ==================================== */
 
 /* .hidden-development-container */
-#popup-c{
+/* #popup-c{
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -3506,7 +3630,6 @@ Everything about me section
    #popup-conten{
     width: 968px;
     height: 711.5px;
-    /* border:2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3542,9 +3665,6 @@ Everything about me section
     border-radius:50%;
    }
 
-
-         /* Media query  1200px
-   --------------------------------- */
    @media(max-width:1200px){
     #popup-c{
         width: 100vw;
@@ -3561,8 +3681,6 @@ Everything about me section
     }
    }
 
-            /* Media query  800px
-   --------------------------------- */
    @media(max-width:800px){
     #popup-c{
         width: 100vw;
@@ -3596,8 +3714,6 @@ Everything about me section
 
    }
 
-               /* Media query  600px
-   --------------------------------- */
    @media(max-width:600px){
     #popup-c{
         width: 100vw;
@@ -3612,7 +3728,7 @@ Everything about me section
         width: 100%;
         height: 120px;
     }
-   }
+   } */
 
            /* Hidden content end 
    =============================== */
@@ -3630,7 +3746,7 @@ Everything about me section
 
 .my-services-container{
     width: 100%;
-    height: 1553px;
+    height: 1000px;
     font-family: 'Karla', sans-serif;
     background-color: #fff;
 }
@@ -8185,7 +8301,7 @@ a span{
    ============================== */
 
 
-.my-services-child-container
+/* .my-services-child-container
 .my-services-video-content {
     width: 1210px;
     height: 605px;
@@ -8252,7 +8368,7 @@ a span{
     right: 20px;
     bottom: 20px;
     
-}
+} */
 
 
 /* Video content 1230px
@@ -9330,7 +9446,7 @@ Video hidden content section responsive
   -------------------------- */
   /* box a
   --------------- */
-  /* .swiper-a{
+  .swiper-a{
     position:fixed;
     top: 0;
     left: 0;
@@ -9386,17 +9502,17 @@ Video hidden content section responsive
         height: 150px;
        }
     
-} */
+}
 
 /* box-a
 ----------------
 template clickable 
 ========================== */
-#project_a{
+.project-box{
     position: relative;
 }
 
-#project_a .template_new{
+.project-box .template_new{
     position: absolute;
     top: 0;
     left: 0;
@@ -10477,6 +10593,7 @@ customer and clients work
     justify-content: center;
     align-items: center;
     font-family: 'Karla', sans-serif;
+    margin-bottom: 150px;
 }
 
 .testimonial-container .testimonial-child{
@@ -13915,7 +14032,7 @@ contact section
 
 .heading .counting .run{
     font-size: 50px;
-    color: #fff;;
+    color: #fff;
 }
 
 .heading .counting .sign{
