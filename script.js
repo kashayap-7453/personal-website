@@ -280,33 +280,33 @@ function showSlides(n) {
 
 // box b
 // ----------
-document.querySelector('#project_b').addEventListener("click" , function(){
-  document.querySelector(".swiper-b").style.display = "block";
-})
+// document.querySelector('#project_b').addEventListener("click" , function(){
+//   document.querySelector(".swiper-b").style.display = "block";
+// })
 
-document.querySelector(".swiper_close_b").addEventListener("click" ,function(){
-  document.querySelector(".swiper-b").style.display = "none";
-})
+// document.querySelector(".swiper_close_b").addEventListener("click" ,function(){
+//   document.querySelector(".swiper-b").style.display = "none";
+// })
 
-// box c
-// ----------
-document.querySelector('#project_c').addEventListener("click" , function(){
-  document.querySelector(".swiper-c").style.display = "block";
-})
+// // box c
+// // ----------
+// document.querySelector('#project_c').addEventListener("click" , function(){
+//   document.querySelector(".swiper-c").style.display = "block";
+// })
 
-document.querySelector(".swiper_close_c").addEventListener("click" ,function(){
-  document.querySelector(".swiper-c").style.display = "none";
-})
+// document.querySelector(".swiper_close_c").addEventListener("click" ,function(){
+//   document.querySelector(".swiper-c").style.display = "none";
+// })
 
-// box d
-// ----------
-document.querySelector('#project_d').addEventListener("click" , function(){
-  document.querySelector(".swiper-d").style.display = "block";
-})
+// // box d
+// // ----------
+// document.querySelector('#project_d').addEventListener("click" , function(){
+//   document.querySelector(".swiper-d").style.display = "block";
+// })
 
-document.querySelector(".swiper_d").addEventListener("click" ,function(){
-  document.querySelector(".swiper-d").style.display = "none";
-})
+// document.querySelector(".swiper_d").addEventListener("click" ,function(){
+//   document.querySelector(".swiper-d").style.display = "none";
+// })
 // =========================================
 //     Recently Project work hide boxes
 // =========================================
