@@ -8851,7 +8851,6 @@ Video hidden content section responsive
   .swiper-wrapper .project-box{
     width:383.33px;
     height:548.14px;
-    cursor:pointer;
   }
 
   .swiper-wrapper .project-box .project-image{
@@ -8877,7 +8876,7 @@ Video hidden content section responsive
   }
 
   .project-box .project-image img:hover{ 
-     transform: scale(1.3);
+     transform: scale(1.2);
   }
 
   .project-box .project-details { 
@@ -9614,7 +9613,6 @@ template clickable
     left: 0;
     width: 100%;
     height: 100%;
-    cursor: pointer;
     transition: all .3s linear;
 }
 
