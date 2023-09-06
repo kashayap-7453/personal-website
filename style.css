@@ -2192,7 +2192,7 @@ h5{
 
 .one-comapany .company-material{
     width: 85%;
-    height: 180px;
+    height: 200px;
 }
 
 .one-comapany .company-material .company-paragraph{
@@ -2242,7 +2242,7 @@ h5{
 .everthing-about-me-boxes
 .everthing-about-me-box-list{
     width: 85%;
-    height: 160px;
+    height: 200px;
 }
 
 .everthing-about-me-box-list
@@ -2386,7 +2386,7 @@ h5{
 
 .everthing-about-me-boxes
 .everthing-about-me-box-list{
-    height: 158px;
+    height: 190px;
 }
 
 .everthing-about-me-box-list
@@ -2468,7 +2468,7 @@ p{
 
 .one-comapany .company-material{
     width: 85%;
-    height: 158px;
+    height: 190px;
 }
 
 .one-comapany .company-material .company-paragraph{
@@ -2570,17 +2570,11 @@ p{
         width: 45%;
         height: 276px;
     }
-    
-    /* .everthing-about-me-boxes a{
-        width: 370px;
-        height: 276px;
-        position: absolute;
-    } */
-    
+
     .everthing-about-me-boxes
     .everthing-about-me-box-list{
         width: 85%;
-        height: 178px;
+        height: 200px;
     }
     
     .everthing-about-me-box-list
@@ -2657,7 +2651,7 @@ p{
 
 .one-comapany .company-material{
     width: 85%;
-    height: 178px;
+    height: 200px;
 }
 
 .one-comapany .company-material .company-paragraph{
@@ -2916,7 +2910,7 @@ p{
     .everthing-about-me-boxes
     .everthing-about-me-box-list{
         width: 90%;
-        height: 160px;
+        height: 190px;
     }
     
     .everthing-about-me-box-list
@@ -2992,7 +2986,7 @@ p{
 
 .one-comapany .company-material{
     width: 90%;
-    height: 160px;
+    height: 190px;
 }
 
 
@@ -3885,7 +3879,7 @@ Everything about me section
 }
 
 
-.my-services-heading 
+/* .my-services-heading 
 .my-services-heading-email-a p{
     font-size:18px;
     font-weight: 500;
@@ -3894,7 +3888,7 @@ Everything about me section
     margin-bottom:12px;
     text-transform: uppercase;
     color: #55527C;
-}
+} */
 
 .my-services-heading 
 .my-services-heading-email-a h4{
@@ -3902,7 +3896,7 @@ Everything about me section
     font-weight: 800;
     word-wrap: break-word;
     line-height: 32px;
-    margin-bottom:12px;
+    margin-top: 15px;
     color: #130F49;
 }
 
@@ -3964,7 +3958,6 @@ Everything about me section
 .box-my-services{
      width: 301.33px;
      height: 207px;
-     /* border: 1px solid red; */
 }
 
 .box-my-services .heading-span p{
@@ -4416,7 +4409,6 @@ a span{
         height: 950px;
         font-family: 'Karla', sans-serif;
         background-color: #fff;
-        border: 1px solid blue;
     }
     
     
@@ -5376,7 +5368,7 @@ a span{
 @media(max-width:1050px){
     .my-services-container{
         width: 100%;
-        height: 1200px;
+        height: 1100px;
         font-family: 'Karla', sans-serif;
         background-color: #fff;
     }
@@ -5837,7 +5829,7 @@ a span{
 @media(max-width:700px){
     .my-services-container{
         width: 100%;
-        height: 2200px;
+        height: 2100px;
         font-family: 'Karla', sans-serif;
         background-color: #fff;
     }
@@ -6307,7 +6299,7 @@ a span{
 @media(max-width:550px){
     .my-services-container{
         width: 100%;
-        height: 2425px;
+        height: 2050px;
         font-family: 'Karla', sans-serif;
         background-color: #fff;
     }
@@ -6792,7 +6784,7 @@ a span{
 
     .my-services-container{
         width: 100%;
-        height: 2265px;
+        height: 2000px;
         font-family: 'Karla', sans-serif;
         background-color: #fff;
     }
