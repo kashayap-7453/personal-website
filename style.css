@@ -8904,6 +8904,7 @@ Video hidden content section responsive
     background-color: #fff;
     color:#130f49;
     text-decoration: none;
+    cursor: pointer;
   }
 
   .completed-works-child .completed-works-bottom {

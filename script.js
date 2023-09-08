@@ -290,7 +290,7 @@ function showSlides(n) {
 
 // // box c
 // // ----------
-document.querySelector('#project_c').addEventListener("click" , function(){
+document.querySelector('#typing-certificate').addEventListener("click" , function(){
   document.querySelector(".swiper-c").style.display = "block";
 })
 
