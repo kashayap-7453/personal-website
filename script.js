@@ -290,13 +290,13 @@ function showSlides(n) {
 
 // // box c
 // // ----------
-// document.querySelector('#project_c').addEventListener("click" , function(){
-//   document.querySelector(".swiper-c").style.display = "block";
-// })
+document.querySelector('#project_c').addEventListener("click" , function(){
+  document.querySelector(".swiper-c").style.display = "block";
+})
 
-// document.querySelector(".swiper_close_c").addEventListener("click" ,function(){
-//   document.querySelector(".swiper-c").style.display = "none";
-// })
+document.querySelector(".swiper_close_c").addEventListener("click" ,function(){
+  document.querySelector(".swiper-c").style.display = "none";
+})
 
 // // box d
 // // ----------
