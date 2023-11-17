@@ -129,11 +129,11 @@ const moblieNav = document.querySelector(".click-button");
 const navHeader = document.querySelector(".navbar-container");
 
 const toggleNavbar = () => {
-    // alert("hello");
-    navHeader.classList.toggle("active");
+  // alert("hello");
+  navHeader.classList.toggle("active");
 };
 
-moblieNav.addEventListener("click" , () => toggleNavbar());
+moblieNav.addEventListener("click", () => toggleNavbar());
 
 
 // =========================================
@@ -248,16 +248,16 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("testimoinal-userinterface-section");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 // =========================================
 //     Testimonial section end
@@ -290,11 +290,11 @@ function showSlides(n) {
 
 // // box c
 // // ----------
-document.querySelector('#typing-certificate').addEventListener("click" , function(){
+document.querySelector('#typing-certificate').addEventListener("click", function () {
   document.querySelector(".swiper-c").style.display = "block";
 })
 
-document.querySelector(".swiper_close_c").addEventListener("click" ,function(){
+document.querySelector(".swiper_close_c").addEventListener("click", function () {
   document.querySelector(".swiper-c").style.display = "none";
 })
 
@@ -318,39 +318,39 @@ document.querySelector(".swiper_close_c").addEventListener("click" ,function(){
 // =========================================
 //          Loading section start
 // =========================================
-    let myVar;
-      
-      function myFunction() {
-        myVar = setTimeout(showPage, 1800);
-      }
-      
-      function showPage() {
-        document.getElementById("center").style.display = "none";
-        document.getElementById("web-material").style.display = "block";
-      }
+let myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1800);
+}
+
+function showPage() {
+  document.getElementById("center").style.display = "none";
+  document.getElementById("web-material").style.display = "block";
+}
 
 
 const counters = document.querySelectorAll('.run');
 
 counters.forEach((counter) => {
 
-    const updateCounter = () => {
-        const targetCount =  +counter.getAttribute('data-target');
-        
-        const startingCount = Number(counter.innerHTML);
+  const updateCounter = () => {
+    const targetCount = +counter.getAttribute('data-target');
 
-        const incr = targetCount / 100;
+    const startingCount = Number(counter.innerHTML);
 
-        if(startingCount < targetCount) {
-            counter.innerHTML = `${Math.round(startingCount + incr)}`;
-            setTimeout(updateCounter , 10)
-        }else{
-            counter.innerHTML = targetCount;
-        }
-        
+    const incr = targetCount / 100;
+
+    if (startingCount < targetCount) {
+      counter.innerHTML = `${Math.round(startingCount + incr)}`;
+      setTimeout(updateCounter, 10)
+    } else {
+      counter.innerHTML = targetCount;
     }
 
-    updateCounter();
+  }
+
+  updateCounter();
 });
 
 
