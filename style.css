@@ -119,11 +119,11 @@ html {
   font-family: "Karla", sans-serif;
   color: #130f49;
   font: 500;
+  transition: all 0.3s linear;
 }
 
 .navbar-content ul a:hover {
   color: #a5a6ff;
-  transition: all 0.3s linear;
 }
 
 .navbar-content ul {
@@ -2126,8 +2126,15 @@ Project happy client section
   align-items: center;
   background-color: #fff;
   font-family: "Karla", sans-serif;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transition: 0.2s linear;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  transition:all 0.3s linear;
+}
+
+.everthing-about-me-child-conatiner
+  .everthing-about-me-child-conatiner-four-boxes
+  .everthing-about-me-boxes:hover {
+  /* box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14); */
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .one-comapany {
@@ -2138,7 +2145,13 @@ Project happy client section
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition:all 0.3s linear;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.one-comapany:hover{
+  /* box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14); */
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .one-comapany .company-material {
@@ -2170,6 +2183,19 @@ Project happy client section
   background: transparent;
   color: #a5a6ff;
   text-decoration: none;
+  transition: all .3s linear;
+}
+
+.one-comapany .company-material .company-paragraph #c-button:hover{
+  padding: 10px 0px 10px 15px;
+  box-shadow: inset 0 0 35px 5px rgba(0,0,0,0.25), inset 0 2px 1px 1px rgba(255,255,255,0.9), inset 0 -2px 1px rgba(0,0,0,0.25);
+  
+}
+
+.one-comapany .company-material .company-paragraph #c-button .fa-solid{
+  border: none;
+  box-shadow: none;
+  padding: none;
 }
 
 .one-comapany .company-material .com-image {
@@ -3730,17 +3756,18 @@ Everything about me section
   height: 296px;
   border: 1px solid rgba(30, 30, 30, 0.2);
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s linear;
 }
 
 .my-services-child-container
   .my-services-six-boxes
   .box-my-services-parent:hover {
   margin-bottom: 15px;
-  transition: all 0.3s linear;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .my-services-child-container
@@ -3800,15 +3827,16 @@ Everything about me section
   height: 296px;
   border: 1px solid rgba(30, 30, 30, 0.2);
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s linear;
 }
 
 .my-services-child-container .my-services-six-boxes .box-a-parent:hover {
   margin-bottom: 15px;
-  transition: all 0.3s linear;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .my-services-child-container
@@ -3868,15 +3896,16 @@ Everything about me section
   height: 296px;
   border: 1px solid rgba(30, 30, 30, 0.2);
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s linear;
 }
 
 .my-services-child-container .my-services-six-boxes .box-c-parent:hover {
   margin-bottom: 15px;
-  transition: all 0.3s linear;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .my-services-child-container
@@ -3936,15 +3965,16 @@ Everything about me section
   height: 296px;
   border: 1px solid rgba(30, 30, 30, 0.2);
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s linear;
 }
 
 .my-services-child-container .my-services-six-boxes .box-d-parent:hover {
   margin-bottom: 15px;
-  transition: all 0.3s linear;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .my-services-child-container
@@ -4004,15 +4034,16 @@ Everything about me section
   height: 296px;
   border: 1px solid rgba(30, 30, 30, 0.2);
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s linear;
 }
 
 .my-services-child-container .my-services-six-boxes .box-e-parent:hover {
   margin-bottom: 15px;
-  transition: all 0.3s linear;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .my-services-child-container
@@ -4072,15 +4103,16 @@ Everything about me section
   height: 296px;
   border: 1px solid rgba(30, 30, 30, 0.2);
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s linear;
 }
 
 .my-services-child-container .my-services-six-boxes .box-f-parent:hover {
   margin-bottom: 15px;
-  transition: all 0.3s linear;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .my-services-child-container
