@@ -161,14 +161,22 @@ html {
   padding: 20px;
 }
 
-.navbar-icon ul .fa-brands,
-.fab,
-.fa-solid {
-  color: #130f49;
-  background-color: rgba(19, 15, 73, 0.05);
+.navbar-container-element .navbar-icon ul .fa-brands, .fa-solid {
+  color: #fff;
+  background-color: rgba(127, 143, 166,1.0);
   font-size: 20px;
   border: none;
-  padding: 6px;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.navbar-container-element .navbar-icon ul .fab{
+  color: #fff;
+  background-color: rgba(127, 143, 166,1.0);
+  font-size: 20px;
+  border: none;
+  padding: 8px 12px;
   margin: 10px;
   border-radius: 50%;
 }
@@ -707,20 +715,57 @@ html {
     list-style-type: none;
     text-decoration: none;
     text-align: start;
+    padding: 20px 0 20px 10px ;
   }
 
-  .navbar-icon ul .fa-brands,
-  .fab,
-  .fa-solid {
-    color: black;
-    background-color: transparent;
+  /* .navbar-icon ul {
+    display: flex;
+    flex-direction: row;
+    vertical-align: baseline;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+  } */
+
+  .navbar-container-element .navbar-icon ul .fa-brands, .fa-solid {
+    color: #fff;
+    background-color: rgba(127, 143, 166,1.0);
     font-size: 15px;
     border: none;
-    padding-right: 5px;
-    margin: 0;
-    padding-left: 0;
-    border-radius: 0;
+    padding: 8px;
+    margin: 0px;
+    border-radius: 50%;
   }
+
+  .navbar-container-element .navbar-icon ul .fab{
+    color: #fff;
+    background-color: rgba(127, 143, 166,1.0);
+    font-size: 15px;
+    border: none;
+    padding: 8px 12px;
+    margin: 0px;
+    border-radius: 50%;
+  }
+
+  /* .navbar-container-element .navbar-icon ul .fa-brands, .fa-solid {
+    color: #fff;
+    background-color: rgba(127, 143, 166,1.0);
+    font-size: 20px;
+    border: none;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  .navbar-container-element .navbar-icon ul .fab{
+    color: #fff;
+    background-color: rgba(127, 143, 166,1.0);
+    font-size: 20px;
+    border: none;
+    padding: 8px 12px;
+    margin: 10px;
+    border-radius: 50%;
+  } */
 
   .navbar-icon ul li {
     margin-right: 10px;
@@ -1061,7 +1106,7 @@ html {
   .project-happy-clients-child-container
   .project-happy-clients {
   width: 1210px;
-  height: 600px;
+  height: 700px;
 }
 
 .project-happy-clients .project-happy-clients-two-paragraph {
@@ -1071,17 +1116,17 @@ html {
 }
 
 .project-happy-clients
-  .project-happy-clients-two-paragraph
-  .project-happy-clients-small-paragraph {
+.project-happy-clients-two-paragraph
+.project-happy-clients-small-paragraph {
   width: 40%;
-  height: 318px;
+  height: 400px;
 }
 
 .project-happy-clients
   .project-happy-clients-two-paragraph
   .project-happy-clients-big-paragraph {
   width: 60%;
-  height: 318px;
+  height: 400px;
 }
 
 .project-happy-clients-small-paragraph .project-happy-clients-title {
@@ -1218,8 +1263,7 @@ html {
 }
 
 .three-boxes-experince-project .three-boxes-experince-project-boxes-a:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin-bottom: 5px;
 }
 
@@ -1237,8 +1281,7 @@ html {
 }
 
 .three-boxes-experince-project .three-boxes-experince-project-boxes-b:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin-bottom: 5px;
 }
 
@@ -1256,8 +1299,7 @@ html {
 }
 
 .three-boxes-experince-project .three-boxes-experince-project-boxes-c:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin-bottom: 5px;
 }
 
@@ -1306,14 +1348,14 @@ Project happy client section
     .project-happy-clients-two-paragraph
     .project-happy-clients-small-paragraph {
     width: 40%;
-    height: 300px;
+    height: 350px;
   }
 
   .project-happy-clients
     .project-happy-clients-two-paragraph
     .project-happy-clients-big-paragraph {
     width: 60%;
-    height: 300px;
+    height: 350px;
   }
 
   .project-happy-clients-big-paragraph .project-happy-clients-big-paragraph-a {
@@ -1445,7 +1487,7 @@ Project happy client section
   .project-happy-clients-parent-container
     .project-happy-clients-child-container {
     width: 100%;
-    height: 850px;
+    height: 890px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1455,7 +1497,7 @@ Project happy client section
     .project-happy-clients-child-container
     .project-happy-clients {
     width: 770px;
-    height: 680px;
+    height: 750px;
   }
 
   .project-happy-clients .project-happy-clients-two-paragraph {
@@ -1468,14 +1510,14 @@ Project happy client section
     .project-happy-clients-two-paragraph
     .project-happy-clients-small-paragraph {
     width: 40%;
-    height: 404px;
+    height: 500px;
   }
 
   .project-happy-clients
     .project-happy-clients-two-paragraph
     .project-happy-clients-big-paragraph {
     width: 60%;
-    height: 404px;
+    height: 500px;
   }
 
   .project-happy-clients-big-paragraph .project-happy-clients-big-paragraph-a {
@@ -1487,6 +1529,13 @@ Project happy client section
     font-size: 16px;
     line-height: 30px;
   }
+
+  .project-happy-clients-big-paragraph
+    .age-contact-phone ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
 
   .project-happy-clients-big-paragraph
     .age-contact-phone
@@ -1796,7 +1845,7 @@ Project happy client section
   .project-happy-clients-parent-container
     .project-happy-clients-child-container {
     width: 100%;
-    height: 1450px;
+    height: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1960,7 +2009,7 @@ Project happy client section
   .project-happy-clients-parent-container
     .project-happy-clients-child-container {
     width: 100%;
-    height: 1500px;
+    height: 1550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1970,7 +2019,7 @@ Project happy client section
     .project-happy-clients-child-container
     .project-happy-clients {
     width: 90%;
-    height: 1400px;
+    height: 1450px;
   }
 
   .three-boxes-experince-project-container {
@@ -1992,11 +2041,7 @@ Project happy client section
   }
 }
 
-/* Media query 470px
--------------------------------
-Project happy client section
--------------------------------------*/
-@media (max-width: 380px) {
+@media(max-width: 450px){
   .project-happy-clients-parent-container
     .project-happy-clients-child-container {
     width: 100%;
@@ -2010,7 +2055,29 @@ Project happy client section
     .project-happy-clients-child-container
     .project-happy-clients {
     width: 90%;
-    height: 1500px;
+    height: 1550px;
+  }
+}
+
+/* Media query 470px
+-------------------------------
+Project happy client section
+-------------------------------------*/
+@media (max-width: 380px) {
+  .project-happy-clients-parent-container
+    .project-happy-clients-child-container {
+    width: 100%;
+    height: 1700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-happy-clients-parent-container
+    .project-happy-clients-child-container
+    .project-happy-clients {
+    width: 90%;
+    height: 1600px;
   }
 
   .three-boxes-experince-project-container {
@@ -3287,7 +3354,7 @@ Everything about me section
 }
 
    #popup-a
-   #popup-conten{
+   #popup-conten{email-anchor
     width: 968px;
     height: 711.5px;
     display: flex;
@@ -3723,8 +3790,6 @@ Everything about me section
   font-size: 40px;
   font-weight: 800;
   word-wrap: break-word;
-  line-height: 32px;
-  margin-top: 15px;
   color: #130f49;
 }
 
@@ -3732,7 +3797,6 @@ Everything about me section
   color: #130f49;
   font-size: 18px;
   display: block;
-  line-height: 150px;
 }
 
 .my-services-child-container .my-services-six-boxes {
@@ -4224,7 +4288,7 @@ Everything about me section
     color: #130f49;
     font-size: 16px;
     display: block;
-    line-height: 120px;
+    /* line-height: 120px; */
   }
 
   .my-services-child-container .my-services-six-boxes {
@@ -4643,7 +4707,7 @@ Everything about me section
     color: #130f49;
     font-size: 16px;
     display: block;
-    line-height: 120px;
+    /* line-height: 120px; */
   }
 
   .my-services-child-container .my-services-six-boxes {
@@ -5055,7 +5119,7 @@ Everything about me section
     color: #130f49;
     font-size: 16px;
     display: block;
-    line-height: 120px;
+    /* line-height: 120px; */
   }
 
   .my-services-child-container .my-services-six-boxes {
@@ -5458,7 +5522,7 @@ Everything about me section
     color: #130f49;
     font-size: 16px;
     display: block;
-    line-height: 120px;
+    /* line-height: 120px; */
   }
 
   .my-services-child-container .my-services-six-boxes {
@@ -8253,7 +8317,8 @@ Video hidden content section responsive
 .completed-works-heading .works-heading-right .swiper-button-next .fa-solid {
   visibility: visible;
   padding: 12px;
-  border: 2px solid #130f49;
+  border: none;
+  /* border: 2px solid #130f49; */
   font-size: 15px;
   display: block;
   color: #130f49;
@@ -8276,7 +8341,8 @@ Video hidden content section responsive
 .completed-works-heading .works-heading-right .swiper-button-prev .fa-solid {
   visibility: visible;
   padding: 12px;
-  border: 2px solid #130f49;
+  border: none;
+  /* border: 2px solid #130f49; */
   font-size: 15px;
   display: block;
   color: #130f49;
@@ -10156,7 +10222,8 @@ customer and clients work
 
 .testimonial-container .testimonial-child {
   width: 1210px;
-  height: 645px;
+  height: auto;
+  padding: 50px 0;
   background-color: #fff5f6;
   display: flex;
   justify-content: center;
@@ -10165,7 +10232,7 @@ customer and clients work
 
 .testimonial-container .testimonial-child .testimonial-heading-image-parent {
   width: 960px;
-  height: 500px;
+  height: 90%;
 }
 
 .testimonial-heading-image-parent .testimonial-heading {
@@ -10201,12 +10268,12 @@ customer and clients work
 
 .testimoinal-userinterface-section .testimonial-paragraph {
   width: 100%;
-  height: 120px;
-  margin-top: 43px;
+  height: auto;
+  margin: 30px 0;
 }
 
 .testimoinal-userinterface-section .testimonial-paragraph p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 40px;
   color: #55527c;
@@ -10310,7 +10377,7 @@ Testimonial container section
 
   .testimonial-container .testimonial-child {
     width: 960px;
-    height: 684.5px;
+    height: auto;
     background-color: #fff5f6;
     display: flex;
     justify-content: center;
@@ -10319,7 +10386,7 @@ Testimonial container section
 
   .testimonial-container .testimonial-child .testimonial-heading-image-parent {
     width: 710px;
-    height: 500px;
+    height: 90%;
   }
 
   .testimonial-heading-image-parent .testimonial-heading {
@@ -10347,12 +10414,12 @@ Testimonial container section
 
   .testimoinal-userinterface-section .testimonial-paragraph {
     width: 100%;
-    height: 160px;
-    margin-top: 43px;
+    height: auto;
+    margin: 30px 0;
   }
 
   .testimoinal-userinterface-section .testimonial-paragraph p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 40px;
     color: #55527c;
@@ -10426,7 +10493,7 @@ Testimonial container section
 
   .testimonial-container .testimonial-child {
     width: 770px;
-    height: 724px;
+    height: 100%;
     background-color: #fff5f6;
     display: flex;
     justify-content: center;
@@ -10435,7 +10502,7 @@ Testimonial container section
 
   .testimonial-container .testimonial-child .testimonial-heading-image-parent {
     width: 520px;
-    height: 535px;
+    height: 90%;
   }
 
   .testimonial-heading-image-parent .testimonial-heading {
@@ -10463,12 +10530,12 @@ Testimonial container section
 
   .testimoinal-userinterface-section .testimonial-paragraph {
     width: 100%;
-    height: 200px;
+    height: auto;
     margin-top: 43px;
   }
 
   .testimoinal-userinterface-section .testimonial-paragraph p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 40px;
     color: #55527c;
@@ -10531,7 +10598,7 @@ Testimonial container section
 @media (max-width: 1050px) {
   .testimonial-container {
     width: 100%;
-    height: 680px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10540,16 +10607,16 @@ Testimonial container section
 
   .testimonial-container .testimonial-child {
     width: 95%;
-    height: 680px;
+    height: 100%;
     background-color: #fff5f6;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
+  
   .testimonial-container .testimonial-child .testimonial-heading-image-parent {
     width: 80%;
-    height: 70%;
+    height: 90%;
   }
 
   .testimonial-heading-image-parent .testimonial-heading {
@@ -10569,7 +10636,7 @@ Testimonial container section
   }
 
   .testimonial-heading-image-parent .testimonial-heading h3 {
-    font-size: 35px;
+    font-size: 26px;
     font-weight: 800;
     color: #130f49;
     word-wrap: break-word;
@@ -10578,18 +10645,17 @@ Testimonial container section
   .testimoinal-userinterface-section .testimonial-paragraph {
     width: 100%;
     height: auto;
-    margin-top: 43px;
-    margin-bottom: 20px;
+    margin: 35px 0 ;
   }
 
   .testimoinal-userinterface-section .testimonial-paragraph p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 33px;
     color: #55527c;
     word-wrap: break-word;
     text-align: center;
-    padding: 0 15px;
+    padding: 0 ;
   }
 
   .testimoinal-userinterface-section .image-heading {
@@ -10632,7 +10698,7 @@ Testimonial container section
 
   .testimonials-buttons {
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10648,29 +10714,35 @@ Testimonial container section
 @media (max-width: 550px) {
   .testimonial-container {
     width: 100%;
-    height: 715px;
+    height: 780px;
   }
 
   .testimonial-container .testimonial-child {
     width: 95%;
-    height: 715px;
+    height: 100%;
   }
 
   .testimonial-container .testimonial-child .testimonial-heading-image-parent {
     width: 85%;
-    height: 80%;
+    height: 90%;
   }
 }
 
 @media (max-width: 380px) {
   .testimonial-container {
     width: 100%;
-    height: 775px;
+    height: auto;
+    padding: 40px 0;
   }
 
   .testimonial-container .testimonial-child {
     width: 95%;
-    height: 775px;
+    height: 100%;
+  }
+  
+  .testimonial-container .testimonial-child .testimonial-heading-image-parent {
+    width: 85%;
+    height: 90%;
   }
 
   .testimonial-heading-image-parent .testimonial-heading {
@@ -10697,20 +10769,13 @@ Testimonial container section
 
   .testimonial-heading-image-parent .testimoinal-userinterface-section {
     width: 100%;
-    height: 456px;
+    height: auto;
   }
 
   .testimoinal-userinterface-section .image-heading h3 {
     font-size: 23px;
     font-weight: 600;
     color: #130f49;
-  }
-
-  .testimonial-heading-image-parent .testimonial-heading h3 {
-    font-size: 30px;
-    font-weight: 800;
-    color: #130f49;
-    word-wrap: break-word;
   }
 }
 
